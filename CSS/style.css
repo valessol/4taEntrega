@@ -97,7 +97,7 @@ footer {
 
 /* -------------- Fin del footer----------------*/
 /*Titulos - h1-----*/
-.titulo, .nosotros .nosotros-titulo {
+.titulo, .articulo-testimonios .titulo-testimonios, .nosotros .nosotros-titulo {
   font-family: "Montserrat" sans-serif;
   font-size: 30px;
   text-align: center;
@@ -167,10 +167,21 @@ footer {
   opacity: 1; }
 
 /* ARTICLE- Testimonios*/
-.testimonios img {
-  width: 150px;
-  height: 150px;
-  margin: 20px; }
+.articulo-testimonios {
+  margin: 20px 0 20px 0; }
+  .articulo-testimonios .titulo-testimonios {
+    text-align: left;
+    padding-left: 20px; }
+  .articulo-testimonios .bloque-testimonios {
+    background-color: #252525;
+    border-radius: 20px; }
+    .articulo-testimonios .bloque-testimonios .testimonios img {
+      width: 150px;
+      height: 150px;
+      margin: 20px; }
+    .articulo-testimonios .bloque-testimonios .card-testimonios {
+      background-color: #252525;
+      height: 250px; }
 
 @media only screen and (min-width: 768px) {
   .btn-cortantes {

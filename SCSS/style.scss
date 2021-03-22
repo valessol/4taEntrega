@@ -233,11 +233,31 @@ footer {
 
 /* ARTICLE- Testimonios*/
 
-.testimonios img {
-    width: 150px;
-    height: 150px;
-    margin: $margin;
+
+
+.articulo-testimonios {
+    margin: $margin 0 $margin 0;
+    .titulo-testimonios {
+        @extend .titulo;
+        text-align: left;
+        padding-left: $margin;
+    }
+    .bloque-testimonios {
+        background-color: $gris;
+        border-radius: $margin;
+        .testimonios img {
+            width: 150px;
+            height: 150px;
+            margin: $margin;
+        }
+        .card-testimonios {
+            background-color: $gris;
+            height: 250px;
+        }
+    }
 }
+
+
 
 
 
