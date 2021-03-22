@@ -153,6 +153,31 @@ footer {
 
 /*HOME-----------------------------------------*/ 
 
+.hero {
+    margin: 0 0 $margin 0;
+    .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/ppal.jpg");
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        .hero-text {
+            text-align: center;
+            font-family: $fuentePpal;
+            padding-top: 150px;
+            left: 50%;
+            color: white;
+            h1 {
+                font-size: 80px;
+            }
+            p {
+                font-size: 30px;
+            }
+      }
+    }
+}
+
   /*MAIN*/
 
   /* Botones de categorias: Tratando de hacer andar el hover para que cambie a imagen cuando pasas el mouse. Andaba. De repente dejaron de verse los botones y no entiendo que toqué. Si pasas el mouse es como que te aparecen, pero encima se desfasaron. */ 
