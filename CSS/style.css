@@ -141,7 +141,7 @@ footer {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  margin-bottom: 20px; }
+  margin-bottom: 40px; }
   .categorias button {
     color: white;
     background-color: #252525;
@@ -149,7 +149,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 300px;
-    transition: transform 2s;
+    transition: transform 1s;
     font-size: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -160,7 +160,6 @@ footer {
     background-color: #f18787;
     color: #252525;
     border: none;
-    width: 320px;
     transform: scale(1.05); }
 
 /* ARTICLE- Testimonios*/
@@ -179,6 +178,44 @@ footer {
     .articulo-testimonios .bloque-testimonios .card-testimonios {
       background-color: #252525;
       height: 250px; }
+
+/*ARTICLE- Novedades*/
+.novedades {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 40px; }
+  .novedades .card-novedades {
+    border: solid 2px #252525;
+    border-radius: 20px;
+    width: 400px;
+    height: 150px; }
+    .novedades .card-novedades h3, .novedades .card-novedades p {
+      font-family: "Montserrat" sans-serif;
+      font-size: 30px;
+      text-align: center; }
+    .novedades .card-novedades p {
+      font-size: 18px; }
+  .novedades button {
+    color: white;
+    background-color: #252525;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    transition: transform 1s;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Montserrat" sans-serif;
+    font-weight: bold;
+    text-align: center; }
+  .novedades button:hover {
+    background-color: #f18787;
+    color: #252525;
+    border: none;
+    transform: scale(0.95); }
 
 @media only screen and (min-width: 768px) {
   .btn-cortantes {

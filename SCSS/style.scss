@@ -185,7 +185,7 @@ footer {
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-around;
-      margin-bottom: $margin;
+      margin-bottom: 2*$margin;
       button {
         color: white;
         background-color: $gris;
@@ -193,7 +193,7 @@ footer {
         border-radius: 10px;
         box-shadow: $shadow;
         width: 300px;
-        transition: transform 2s;
+        transition: transform 1s;
         font-size: 20px;
         text-align: center;
         text-transform: uppercase;
@@ -205,18 +205,12 @@ footer {
           background-color: rgb(241, 135, 135);
           color:$gris;
           border: none;
-          width: 320px;
           transform: scale(1.05);
       }
   }
-
-  
-
   
 
 /* ARTICLE- Testimonios*/
-
-
 
 .articulo-testimonios {
     margin: $margin 0 $margin 0;
@@ -240,7 +234,51 @@ footer {
     }
 }
 
+/*ARTICLE- Novedades*/ 
 
+.novedades {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 2*$margin;
+    .card-novedades {
+        border: solid 2px $gris;
+        border-radius: 20px;
+        width: 400px;
+        height: 150px;
+        h3 {
+            font-family: $fuentePpal;
+            font-size: 30px;
+            text-align: center
+        }
+        p {
+            @extend h3;
+            font-size: 18px;
+        }    
+    }
+    button {
+        color: white;
+        background-color: $gris;
+        border-radius: 10px;
+        box-shadow: $shadow;
+        width: 100%;
+        margin-top: 0.5*$margin;
+        padding: 0.5*$margin;
+        transition: transform 1s;
+        font-size: 18px;
+        text-align: center;
+        font-family: $fuentePpal;
+        font-weight: bold;
+        text-align: center;
+    }
+    button:hover {
+        background-color: rgb(241, 135, 135);
+        color:$gris;
+        border: none;
+        transform: scale(0.95);
+    }
+}
 
 
 
