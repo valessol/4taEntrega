@@ -180,7 +180,27 @@ footer {
 
   /*MAIN*/
 
-  /* Botones de categorias: Tratando de hacer andar el hover para que cambie a imagen cuando pasas el mouse. Andaba. De repente dejaron de verse los botones y no entiendo que toqué. Si pasas el mouse es como que te aparecen, pero encima se desfasaron. */ 
+  .categorias {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      margin-bottom: $margin;
+      button {
+        color: white;
+        background-color: $gris;
+        padding: $margin;
+        border-radius: 10px;
+        box-shadow: $shadow;
+        width: 300px;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $fuentePpal;
+        font-size: x-large;
+        font-weight: bold;
+      }
+  }
   
   .seccion {
     position: relative;

@@ -136,7 +136,26 @@ footer {
         font-size: 30px; }
 
 /*MAIN*/
-/* Botones de categorias: Tratando de hacer andar el hover para que cambie a imagen cuando pasas el mouse. Andaba. De repente dejaron de verse los botones y no entiendo que toqué. Si pasas el mouse es como que te aparecen, pero encima se desfasaron. */
+.categorias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-bottom: 20px; }
+  .categorias button {
+    color: white;
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat" sans-serif;
+    font-size: x-large;
+    font-weight: bold; }
+
 .seccion {
   position: relative;
   margin: 40px 20px 40px 0; }
