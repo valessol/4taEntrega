@@ -93,8 +93,19 @@ footer {
   width: 150px;
   height: 150px; }
 
+/* Componentes - Titulos, subtitulos, botones---------------------*/
 /*Titulos - h1-----*/
-.titulo, .articulo-testimonios .titulo-testimonios, .nosotros .nosotros-titulo {
+.titulo, .nosotros .nosotros-titulo {
+  font-family: "Montserrat" sans-serif;
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 40px; }
+
+/*Subtitulos - h2-----*/
+.subtitulo2 {
   font-family: "Montserrat" sans-serif;
   font-size: 30px;
   text-align: center;
@@ -104,14 +115,39 @@ footer {
   margin-top: 20px;
   margin-bottom: 40px; }
 
-/* Subtítulos - h2-----*/
-.subtitulo {
+/* Subtítulos - h3-----*/
+.subtitulo3 {
   font-family: "Acme", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
-  margin: 40px; }
+  margin: 20px; }
+
+/*Parrafos---*/
+p {
+  font-family: "Montserrat" sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px; }
+
+/*Botones*/
+.button {
+  color: white;
+  background-color: #252525;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 1s;
+  font-family: "Montserrat" sans-serif; }
+
+.button:hover {
+  background-color: #f18787;
+  color: #252525;
+  border: none;
+  transform: scale(1.05); }
 
 /*HOME-----------------------------------------*/
+/* Hero Image */
 .hero {
   margin: 0 0 20px 0; }
   .hero .hero-image {
@@ -132,37 +168,25 @@ footer {
       .hero .hero-image .hero-text p {
         font-size: 30px; }
 
-/*MAIN*/
+/*Main*/
 .categorias {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
   margin-bottom: 40px; }
-  .categorias button {
-    color: white;
-    background-color: #252525;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  .categorias .button {
     width: 300px;
-    transition: transform 1s;
     font-size: 20px;
     text-align: center;
     text-transform: uppercase;
-    font-family: "Montserrat" sans-serif;
     font-size: x-large;
     font-weight: bold; }
-  .categorias button:hover {
-    background-color: #f18787;
-    color: #252525;
-    border: none;
-    transform: scale(1.05); }
 
 /* ARTICLE- Testimonios*/
 .articulo-testimonios {
   margin: 20px 0 20px 0; }
-  .articulo-testimonios .titulo-testimonios {
+  .articulo-testimonios .subtitulo2 {
     text-align: left;
     padding-left: 20px; }
   .articulo-testimonios .bloque-testimonios {
@@ -174,7 +198,9 @@ footer {
       margin: 20px; }
     .articulo-testimonios .bloque-testimonios .card-testimonios {
       background-color: #252525;
-      height: 250px; }
+      height: 300px; }
+    .articulo-testimonios .bloque-testimonios p {
+      margin-bottom: 0; }
 
 /*ARTICLE- Novedades*/
 .novedades {
@@ -187,56 +213,17 @@ footer {
     border: solid 2px #252525;
     border-radius: 20px;
     width: 400px;
-    height: 150px; }
-    .novedades .card-novedades h3, .novedades .card-novedades p {
-      font-family: "Montserrat" sans-serif;
-      font-size: 30px;
-      text-align: center; }
-    .novedades .card-novedades p {
-      font-size: 18px; }
-  .novedades button {
-    color: white;
-    background-color: #252525;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 200px; }
+  .novedades .button {
     width: 100%;
     margin-top: 10px;
     padding: 10px;
-    transition: transform 1s;
     font-size: 18px;
     text-align: center;
-    font-family: "Montserrat" sans-serif;
     font-weight: bold;
     text-align: center; }
   .novedades button:hover {
-    background-color: #f18787;
-    color: #252525;
-    border: none;
     transform: scale(0.95); }
-
-@media only screen and (min-width: 768px) {
-  .btn-cortantes {
-    font-size: large;
-    width: 100%;
-    height: 100px;
-    margin: 10px; }
-  .btn-sellos {
-    font-size: large;
-    width: 100%;
-    height: 100px;
-    margin: 10px; }
-  .btn-toppers {
-    font-size: large;
-    width: 100%;
-    height: 100px;
-    margin: 10px; }
-  .btn-herramientas {
-    font-size: large;
-    width: 100%;
-    height: 100px;
-    margin: 10px; }
-  .logoFooter {
-    display: none; } }
 
 /* ------------------------Fin del HOME---------------*/
 /* PRODUCTOS--------------------------------*/

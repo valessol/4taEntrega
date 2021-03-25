@@ -1,0 +1,63 @@
+/*Titulos - h1-----*/ 
+
+.titulo {
+    font-family: $fuentePpal;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    margin-top: $margin;
+    margin-bottom: $margin*2;
+}
+
+/*Subtitulos - h2-----*/ 
+
+.subtitulo2 {
+    font-family: $fuentePpal;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    background-color: $blanco;
+    margin-top: $margin;
+    margin-bottom: $margin*2;
+}
+
+/* Subtítulos - h3-----*/ 
+
+.subtitulo3 {
+    font-family: $fuenteSec;
+    font-size: 25px;
+    text-align: center;
+    margin: $margin;
+ }
+
+ /*Parrafos---*/
+
+ p {
+    font-family: $fuentePpal;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: $margin;
+    padding: 0.5*$margin;
+ }
+
+
+
+ /*Botones*/ 
+
+ .button {
+    color: white;
+    background-color: $gris;
+    padding: $margin;
+    border-radius: 10px;
+    box-shadow: $shadow;
+    transition: transform 1s;
+    font-family: $fuentePpal;
+ }
+ .button:hover {
+    background-color: rgb(241, 135, 135);
+    color:$gris;
+    border: none;
+    transform: scale(1.05);
+}

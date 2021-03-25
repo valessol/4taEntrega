@@ -14,31 +14,12 @@
   /* FOOTER -------------------------------*/ 
 @import "footer";
 
-
-/*Titulos - h1-----*/ 
-
-.titulo {
-    font-family: $fuentePpal;
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    border: none;
-    background-color: $blanco;
-    margin-top: $margin;
-    margin-bottom: $margin*2;
-}
-
-/* Subtítulos - h2-----*/ 
-
-.subtitulo {
-    font-family: $fuenteSec;
-    font-size: 20px;
-    text-align: center;
-    margin: 2*$margin;
- }
+/* Componentes - Titulos, subtitulos, botones---------------------*/ 
+@import "componentes";
 
 /*HOME-----------------------------------------*/ 
 
+/* Hero Image */ 
 .hero {
     margin: 0 0 $margin 0;
     .hero-image {
@@ -64,7 +45,7 @@
     }
 }
 
-  /*MAIN*/
+  /*Main*/
 
   .categorias {
       display: flex;
@@ -72,26 +53,13 @@
       flex-wrap: nowrap;
       justify-content: space-around;
       margin-bottom: 2*$margin;
-      button {
-        color: white;
-        background-color: $gris;
-        padding: $margin;
-        border-radius: 10px;
-        box-shadow: $shadow;
+      .button {
         width: 300px;
-        transition: transform 1s;
         font-size: 20px;
         text-align: center;
         text-transform: uppercase;
-        font-family: $fuentePpal;
         font-size: x-large;
         font-weight: bold;
-      }
-      button:hover {
-          background-color: rgb(241, 135, 135);
-          color:$gris;
-          border: none;
-          transform: scale(1.05);
       }
   }
   
@@ -100,8 +68,7 @@
 
 .articulo-testimonios {
     margin: $margin 0 $margin 0;
-    .titulo-testimonios {
-        @extend .titulo;
+    .subtitulo2 {
         text-align: left;
         padding-left: $margin;
     }
@@ -115,7 +82,10 @@
         }
         .card-testimonios {
             background-color: $gris;
-            height: 250px;
+            height: 300px;
+        }
+        p {
+            margin-bottom: 0;
         }
     }
 }
@@ -132,69 +102,19 @@
         border: solid 2px $gris;
         border-radius: 20px;
         width: 400px;
-        height: 150px;
-        h3 {
-            font-family: $fuentePpal;
-            font-size: 30px;
-            text-align: center
-        }
-        p {
-            @extend h3;
-            font-size: 18px;
-        }    
+        height: 200px;
     }
-    button {
-        color: white;
-        background-color: $gris;
-        border-radius: 10px;
-        box-shadow: $shadow;
+    .button {
         width: 100%;
         margin-top: 0.5*$margin;
         padding: 0.5*$margin;
-        transition: transform 1s;
         font-size: 18px;
         text-align: center;
-        font-family: $fuentePpal;
         font-weight: bold;
         text-align: center;
     }
     button:hover {
-        background-color: rgb(241, 135, 135);
-        color:$gris;
-        border: none;
         transform: scale(0.95);
-    }
-}
-
-
-
-@media only screen and (min-width: 768px) {
-    .btn-cortantes {
-        font-size: large;
-        width: 100%;
-        height: 100px;
-        margin: 10px;
-    }
-    .btn-sellos {
-        font-size: large;
-        width: 100%;
-        height: 100px;
-        margin: 10px;
-    }
-    .btn-toppers {
-        font-size: large;
-        width: 100%;
-        height: 100px;
-        margin: 10px;
-    }
-    .btn-herramientas {
-        font-size: large;
-        width: 100%;
-        height: 100px;
-        margin: 10px;
-    }
-    .logoFooter {
-        display: none;
     }
 }
 
