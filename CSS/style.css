@@ -6,7 +6,6 @@
   box-sizing: border-box; }
 
 /* Variables */
-/*--CSS COMUN A TODAS LAS PAGINAS--*/
 /*HEADER-----------------------------*/
 .menuSecundario {
   margin-top: 10px;
@@ -72,7 +71,6 @@ li.dropdown {
 .dropdown:hover .dropdownContent {
   display: block; }
 
-/* ---------------- Fin del header-------------*/
 /* FOOTER -------------------------------*/
 footer {
   background-color: #252525;
@@ -95,7 +93,6 @@ footer {
   width: 150px;
   height: 150px; }
 
-/* -------------- Fin del footer----------------*/
 /*Titulos - h1-----*/
 .titulo, .articulo-testimonios .titulo-testimonios, .nosotros .nosotros-titulo {
   font-family: "Montserrat" sans-serif;
