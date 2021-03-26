@@ -130,10 +130,18 @@
         margin-bottom: $margin;
     }
     .galeriaEfecto {
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
         transition-duration: 0.3s;
-        transition-property: box-shadow;
+        transition-property: box-shadow, transform; 
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+
+        .galeriaFondo {
+            background-color: rgb(202, 201, 201);
+            opacity: 100%;
+        }
+
+        .galeriaCard {
+            transform: none;
+        }
         
         .galeriaTitulo {
             font-family: $fuentePpal;
@@ -146,11 +154,10 @@
             font-weight: bold;
         }
         
-        .galeriaBoton {
-            background-color: $gris;
-            box-shadow: $shadow;
+        .button {
             border-radius: 5px;
-            .galeriaBotonEnlace {
+            padding: 0;
+            .linkButton {
                 width: 100%;
                 font-family: $fuentePpal;
                 font-size: 14px;
@@ -158,11 +165,11 @@
             }
         }
     }
-    
 }
 
 .galeriaEfecto:hover div {
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform:scale(1.05)
 }
  /*-----------------Fin de Productos---------------*/
 
