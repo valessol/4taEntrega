@@ -233,10 +233,14 @@ p {
   .galeria .ordenar {
     margin-bottom: 20px; }
   .galeria .galeriaEfecto {
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     transition-duration: 0.3s;
-    transition-property: box-shadow; }
+    transition-property: box-shadow, transform;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0); }
+    .galeria .galeriaEfecto .galeriaFondo {
+      background-color: #252525;
+      opacity: 100%; }
+    .galeria .galeriaEfecto .galeriaCard {
+      transform: none; }
     .galeria .galeriaEfecto .galeriaTitulo {
       font-family: "Montserrat" sans-serif;
       font-size: 16px;
@@ -244,18 +248,18 @@ p {
     .galeria .galeriaEfecto .galeriaPrecio {
       font-family: "Acme", sans-serif;
       font-weight: bold; }
-    .galeria .galeriaEfecto .galeriaBoton {
-      background-color: #252525;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      border-radius: 5px; }
-      .galeria .galeriaEfecto .galeriaBoton .galeriaBotonEnlace {
+    .galeria .galeriaEfecto .button {
+      border-radius: 5px;
+      padding: 0; }
+      .galeria .galeriaEfecto .button .linkButton {
         width: 100%;
         font-family: "Montserrat" sans-serif;
         font-size: 14px;
         color: #ffffff; }
 
 .galeriaEfecto:hover div {
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.05); }
 
 /*-----------------Fin de Productos---------------*/
 /*DESCARGAS--------------------------*/
