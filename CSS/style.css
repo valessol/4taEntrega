@@ -237,7 +237,7 @@ p {
     transition-property: box-shadow, transform;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0); }
     .galeria .galeriaEfecto .galeriaFondo {
-      background-color: #252525;
+      background-color: #cac9c9;
       opacity: 100%; }
     .galeria .galeriaEfecto .galeriaCard {
       transform: none; }
