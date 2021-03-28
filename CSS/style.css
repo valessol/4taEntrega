@@ -95,7 +95,7 @@ footer {
 
 /* Componentes - Titulos, subtitulos, botones---------------------*/
 /*Titulos - h1-----*/
-.titulo, .nosotros .nosotros-titulo {
+.titulo {
   font-family: "Montserrat" sans-serif;
   font-size: 60px;
   text-align: center;
@@ -318,7 +318,7 @@ p {
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "titulo titulo titulo" "img parrafo parrafo";
   margin-bottom: 20px; }
-  .nosotros .nosotros-titulo {
+  .nosotros .titulo {
     grid-area: titulo; }
   .nosotros .nosotros-img {
     grid-area: img; }

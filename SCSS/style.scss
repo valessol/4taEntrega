@@ -247,8 +247,7 @@
         "titulo titulo titulo"
         "img parrafo parrafo";
         margin-bottom: $margin;
-     .nosotros-titulo {
-         @extend .titulo;
+     .titulo {
          grid-area: titulo;
      }
      .nosotros-img {
