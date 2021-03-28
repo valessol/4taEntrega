@@ -124,18 +124,42 @@
 
 /*Galeria de productos*/
 
+.acordeonItem {
+    padding: $margin;
+    transition: transform 1s;
+    font-family: $fuentePpal;
+    text-transform: uppercase;
+ }
+ .acordeonItem:hover {
+    background-color: rgb(247, 173, 173);
+    color:$gris;
+    border: none;
+}
+
 .galeria {
     margin-bottom: $margin;
-    .ordenar {
-        margin-bottom: $margin;
+    .galeriaNav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        .ordenar {
+            margin-bottom: $margin;
+        }
+        .paginacion {
+            .numeracion {
+                color: rgba(0, 0, 0, 1);
+            }
+        }
     }
+    
     .galeriaEfecto {
         transition-duration: 0.3s;
         transition-property: box-shadow, transform; 
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
 
         .galeriaFondo {
-            background-color: rgb(202, 201, 201);
+            background-color: rgb(231, 227, 227);
             opacity: 100%;
         }
 

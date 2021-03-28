@@ -228,16 +228,34 @@ p {
 /* ------------------------Fin del HOME---------------*/
 /* PRODUCTOS--------------------------------*/
 /*Galeria de productos*/
+.acordeonItem {
+  padding: 20px;
+  transition: transform 1s;
+  font-family: "Montserrat" sans-serif;
+  text-transform: uppercase; }
+
+.acordeonItem:hover {
+  background-color: #f7adad;
+  color: #252525;
+  border: none; }
+
 .galeria {
   margin-bottom: 20px; }
-  .galeria .ordenar {
-    margin-bottom: 20px; }
+  .galeria .galeriaNav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; }
+    .galeria .galeriaNav .ordenar {
+      margin-bottom: 20px; }
+    .galeria .galeriaNav .paginacion .numeracion {
+      color: black; }
   .galeria .galeriaEfecto {
     transition-duration: 0.3s;
     transition-property: box-shadow, transform;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0); }
     .galeria .galeriaEfecto .galeriaFondo {
-      background-color: #cac9c9;
+      background-color: #e7e3e3;
       opacity: 100%; }
     .galeria .galeriaEfecto .galeriaCard {
       transform: none; }

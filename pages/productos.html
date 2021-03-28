@@ -68,9 +68,9 @@
         </header>
 
         <main class="row">
-          <h1 class="titulo">
-            Nuestros Productos
-          </h1>
+            <h1 class="titulo">
+                Nuestros Productos
+            </h1>
 
             <!-- Menu de categorias -->
             <aside class="col-3">
@@ -86,7 +86,7 @@
                   <!-- Item 1 -->
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <button class="accordion-button collapsed acordeonItem" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                         Cortantes
                       </button>
                     </h2>
@@ -94,11 +94,12 @@
                       <div class="accordion-body">
                         <div class="list-group list-group-flush">
                           <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                            Animales
+                            Among Us
                           </a>
-                          <a href="#" class="list-group-item list-group-item-action">Básicos</a>
-                          <a href="#" class="list-group-item list-group-item-action">Temáticos</a>
-                          <a href="#" class="list-group-item list-group-item-action">Vehiculos</a>
+                          <a href="#" class="list-group-item list-group-item-action">Granja</a>
+                          <a href="#" class="list-group-item list-group-item-action">El Extraño Mundo de Jack</a>
+                          <a href="#" class="list-group-item list-group-item-action">Pascuas</a>
+                          <a href="#" class="list-group-item list-group-item-action">Futbol</a>
                         </div>
                       </div>
                     </div>
@@ -107,7 +108,7 @@
                   <!-- Item 2 -->
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      <button class="accordion-button collapsed acordeonItem" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                         Cake toppers
                       </button>
                     </h2>
@@ -128,7 +129,7 @@
                   <!-- Item 3 -->
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <button class="accordion-button collapsed acordeonItem" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                         Sellos
                       </button>
                     </h2>
@@ -147,18 +148,19 @@
 
                   <!-- Item 4 -->
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                      <button class="accordion-button collapsed acordeonItem" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                         Herramientas
                       </button>
                     </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                       <div class="accordion-body">
                         <div class="list-group list-group-flush">
                           <a href="#" class="list-group-item list-group-item-action" aria-current="true">
                             Scrapers
                           </a>
                           <a href="#" class="list-group-item list-group-item-action">Stencils</a>
+                          <a href="#" class="list-group-item list-group-item-action">Texturizadores</a>
                         </div>
                       </div>
                     </div>
@@ -169,14 +171,23 @@
             <!-- Galeria de productos -->
             <section class="col-9 galeria">
 
-                <!-- Boton desplegable de ordenar -->
-                <div>
+                <!-- Boton desplegable de ordenar y paginación -->
+                <div class="galeriaNav">
                   <select class="ordenar">
                     <option value="ordenar">Ordenar por:</option>
                     <option value="nombreAZ">Nombre A-Z</option>
                     <option value="menorPrecio">Menor precio</option>
                     <option value="mayorPrecio">Mayor precio</option>
                   </select>
+                  <nav aria-label="Products page navigation" class="paginacion">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a></li>
+                      <li class="page-item"><a class="page-link numeracion" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link numeracion" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link numeracion" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link numeracion" href="#">Next</a></li>
+                    </ul>
+                  </nav>
                 </div>
 
                 <!-- Galeria -->
