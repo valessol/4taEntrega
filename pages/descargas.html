@@ -82,50 +82,71 @@
             <h2 class="subtitulo2">
                 ¿Cómo te llevas con las cookies?
             </h2>
-            <div class="row suscripcion">
-                <div class="col-6">
+            <div class="suscripcion">
                     <p>¿Sos fan de las cookies y de hacer tus propios diseños? ¿O todavía no te animaste a dar el primer paso para hacerlas? </p>
                     <p>Te cuento que hacer tus propias galletas no es difícil. En esta guía te comparto lo que se para que comiences en el fascinante mundo de las cookies sin miedos.</p>
                     <p>Y además vas a encontrar lo que necesitas saber para realizar el glase con el punto justo para decorarlas a tu gusto, con tips y consejos clave.</p>
-                    <p>¡Accedé ahora!</p>
-                </div>
             
+                <!-- Button trigger modal -->
+                <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    ¡Acceder ahora!
+                </button>
                 
-                <form class="col-6 form">
-                    <div class="form-field">
-                        <label for="nombre" class="label">Nombre</label>
-                        <input type="text" name="nombre" class="input" value="nombre">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialig-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Recibí la receta en tu mail</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form">
+                                <div class="form-field">
+                                    <label for="nombre" class="label">Nombre</label>
+                                    <input type="text" name="nombre" class="input" value="nombre">
+                                </div>
+                                <div class="form-field">
+                                    <label for="email" class="label">E-mail</label>
+                                    <input type="text" name="email" class="input" value="email">
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" name="acepta" value="1" />
+                                    <div>Acepto suscribirme al newsletter</div> 
+                                </div>    
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-dark">Enviar</button>
+                        </div>
                     </div>
-                    <div class="form-field">
-                        <label for="email" class="label">E-mail</label>
-                        <input type="text" name="email" class="input" value="email">
                     </div>
-                    <div>
-                        <input type="checkbox" name="acepta" value="1" />
-                        Acepto suscribirme al newsletter
-                    </div>    
-                    <div class="form-field">
-                        <button type="submit" class="btn form-field-btn button justify-content-center">Descargar</button>
-                    </div>
-                </form>
+                </div>
+
+
+            <hr>    
             </div>
-            <div>
-                <h2 class="subtitulo">
+            <div class="row descargas-contenido">
+                <h2 class="col-4 subtitulo2">
                     ¿Qué vas a encontrar en esta guía?
                 </h2>
-                <p>Esta guía está pensada para vos si todavía no te animaste a realizar tus propias cookies.
+                <div class="col-8 bloque-contenido">
+                    <p>Esta guía está pensada para vos si todavía no te animaste a realizar tus propias cookies.
                     Hoy en día son cada vez mas populares, y podes encontrar un montón de aplicaciones en dónde podes llevar tu trabajo: cumpleaños, eventos, regalos, etc.</p>
-                <p>Si ya hacés cookies, y tenes tu receta, también vas a encontrar tips y consejos que te pueden servir para mejorar la técnica.</p>
-                <p>En esta guía te comparto mis secretos para lograr las mejores cookies: </p>
-                <ul>
-                    <li>Receta de las cookies</li>
-                    <li>Modo de preparación y amasado</li>
-                    <li>Tips y consejos sobre guardado</li>
-                    <li>Receta del glasé real</li>
-                    <li>Cómo prepararlo</li>
-                    <li>Cómo lograr glasé fluido</li>
-                    <li>Consejos adicionales a tener en cuenta</li>
-                </ul>
+                    <p>Si ya hacés cookies, y tenes tu receta, también vas a encontrar tips y consejos que te pueden servir para mejorar la técnica.</p>
+                    <p>En esta guía te comparto mis secretos para lograr las mejores cookies: </p>
+                    <ul>
+                        <li>Receta de las cookies</li>
+                        <li>Modo de preparación y amasado</li>
+                        <li>Tips y consejos sobre guardado</li>
+                        <li>Receta del glasé real</li>
+                        <li>Cómo prepararlo</li>
+                        <li>Cómo lograr glasé fluido</li>
+                        <li>Consejos adicionales a tener en cuenta</li>
+                    </ul>
+                </div>
+                
             </div>
         </main>
 

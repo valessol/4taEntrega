@@ -187,22 +187,22 @@ p {
     font-weight: bold; }
 
 /* ARTICLE- Testimonios*/
-.articulo-testimonios {
+.articulo-testimonios, .descargas-contenido {
   margin: 20px 0 20px 0; }
-  .articulo-testimonios .subtitulo2 {
+  .articulo-testimonios .subtitulo2, .descargas-contenido .subtitulo2 {
     text-align: left;
     padding-left: 20px; }
-  .articulo-testimonios .bloque-testimonios {
+  .articulo-testimonios .bloque-testimonios, .descargas-contenido .bloque-testimonios, .descargas-contenido .bloque-contenido {
     background-color: #252525;
     border-radius: 20px; }
-    .articulo-testimonios .bloque-testimonios .testimonios img {
+    .articulo-testimonios .bloque-testimonios .testimonios img, .descargas-contenido .bloque-testimonios .testimonios img, .descargas-contenido .bloque-contenido .testimonios img {
       width: 150px;
       height: 150px;
       margin: 20px; }
-    .articulo-testimonios .bloque-testimonios .card-testimonios {
+    .articulo-testimonios .bloque-testimonios .card-testimonios, .descargas-contenido .bloque-testimonios .card-testimonios, .descargas-contenido .bloque-contenido .card-testimonios {
       background-color: #252525;
       height: 300px; }
-    .articulo-testimonios .bloque-testimonios p {
+    .articulo-testimonios .bloque-testimonios p, .descargas-contenido .bloque-testimonios p, .descargas-contenido .bloque-contenido p {
       margin-bottom: 0; }
 
 /*ARTICLE- Novedades*/
@@ -289,34 +289,49 @@ p {
 
 .suscripcion {
   margin: 20px; }
-  .suscripcion .form {
-    background-color: rgba(37, 37, 37, 0.3);
-    border-radius: 10px; }
-    .suscripcion .form .form-field {
-      margin: 20px;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: start; }
-      .suscripcion .form .form-field .label {
-        font-family: "Montserrat" sans-serif;
-        font-size: 18px;
-        padding-right: 20px;
-        padding-bottom: 10px; }
-      .suscripcion .form .form-field .input {
-        border: 1px solid #252525;
-        border-radius: 5px;
-        padding-left: 20px;
-        text-transform: capitalize;
-        width: 100%; }
-      .suscripcion .form .form-field .form-field-btn {
-        justify-self: center;
-        /* ¿PORQUE NO ME TOMA EL JUSTIFY-SELF PARA CENTRAR EL BOTON? */
-        width: max-content;
-        background-color: #252525;
-        color: #ffffff;
-        font-family: "Montserrat" sans-serif;
-        border-radius: 5px;
-        text-transform: uppercase; }
+  .suscripcion p {
+    text-align: left;
+    margin: 0; }
+  .suscripcion .button {
+    padding: 10px;
+    margin: 40px;
+    text-align: center;
+    margin-left: 45%;
+    font-size: 20px;
+    font-weight: bold; }
+  .suscripcion .form .form-field {
+    margin: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start; }
+    .suscripcion .form .form-field .label {
+      font-family: "Montserrat" sans-serif;
+      font-size: 18px;
+      padding-right: 20px;
+      padding-bottom: 10px; }
+    .suscripcion .form .form-field .input {
+      border: 1px solid #252525;
+      border-radius: 5px;
+      padding-left: 20px;
+      text-transform: capitalize;
+      width: 100%; }
+  .suscripcion .form .form-check {
+    margin: 20px;
+    display: inline-block; }
+    .suscripcion .form .form-check input {
+      display: inline; }
+    .suscripcion .form .form-check div {
+      display: inline; }
+
+.descargas-contenido {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .descargas-contenido p {
+    color: #ffffff;
+    text-align: left;
+    margin: 0; }
+  .descargas-contenido ul {
+    color: #ffffff; }
 
 /*--------------------Fin de descargas--------------------*/
 /*NOSOTROS-------------------*/
