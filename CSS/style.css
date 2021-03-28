@@ -95,7 +95,7 @@ footer {
 
 /* Componentes - Titulos, subtitulos, botones---------------------*/
 /*Titulos - h1-----*/
-.titulo, .nosotros .nosotros-titulo {
+.titulo {
   font-family: "Montserrat" sans-serif;
   font-size: 60px;
   text-align: center;
@@ -146,12 +146,10 @@ p {
   border: none;
   transform: scale(1.05); }
 
-/*HOME-----------------------------------------*/
 /* Hero Image */
 .hero {
-  margin: 0 0 20px 0; }
+  margin: 0 0 40px 0; }
   .hero .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/ppal.jpg");
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
@@ -167,6 +165,11 @@ p {
         font-size: 80px; }
       .hero .hero-image .hero-text p {
         font-size: 30px; }
+
+/*HOME-----------------------------------------*/
+/* Hero Image */
+.home-hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/ppal.jpg"); }
 
 /*Main*/
 .categorias {
@@ -228,16 +231,34 @@ p {
 /* ------------------------Fin del HOME---------------*/
 /* PRODUCTOS--------------------------------*/
 /*Galeria de productos*/
+.acordeonItem {
+  padding: 20px;
+  transition: transform 1s;
+  font-family: "Montserrat" sans-serif;
+  text-transform: uppercase; }
+
+.acordeonItem:hover {
+  background-color: #f7adad;
+  color: #252525;
+  border: none; }
+
 .galeria {
   margin-bottom: 20px; }
-  .galeria .ordenar {
-    margin-bottom: 20px; }
+  .galeria .galeriaNav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; }
+    .galeria .galeriaNav .ordenar {
+      margin-bottom: 20px; }
+    .galeria .galeriaNav .paginacion .numeracion {
+      color: black; }
   .galeria .galeriaEfecto {
     transition-duration: 0.3s;
     transition-property: box-shadow, transform;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0); }
     .galeria .galeriaEfecto .galeriaFondo {
-      background-color: #cac9c9;
+      background-color: #e7e3e3;
       opacity: 100%; }
     .galeria .galeriaEfecto .galeriaCard {
       transform: none; }
@@ -263,10 +284,14 @@ p {
 
 /*-----------------Fin de Productos---------------*/
 /*DESCARGAS--------------------------*/
+.descargas-hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/Receta.jpg"); }
+
 .suscripcion {
   margin: 20px; }
   .suscripcion .form {
-    background-color: rgba(37, 37, 37, 0.3); }
+    background-color: rgba(37, 37, 37, 0.3);
+    border-radius: 10px; }
     .suscripcion .form .form-field {
       margin: 20px;
       display: flex;
@@ -295,12 +320,16 @@ p {
 
 /*--------------------Fin de descargas--------------------*/
 /*NOSOTROS-------------------*/
+.nosotros-hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/Impresoras2.png"); }
+
 .nosotros {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "titulo titulo titulo" "img parrafo parrafo";
-  margin-bottom: 20px; }
-  .nosotros .nosotros-titulo {
+  margin-bottom: 20px;
+  margin-top: 40px; }
+  .nosotros .titulo {
     grid-area: titulo; }
   .nosotros .nosotros-img {
     grid-area: img; }
