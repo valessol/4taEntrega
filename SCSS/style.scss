@@ -20,29 +20,9 @@
 /*HOME-----------------------------------------*/ 
 
 /* Hero Image */ 
-.hero {
-    margin: 0 0 $margin 0;
-    .hero-image {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/ppal.jpg");
-        height: 400px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        .hero-text {
-            text-align: center;
-            font-family: $fuentePpal;
-            padding-top: 150px;
-            left: 50%;
-            color: white;
-            h1 {
-                font-size: 80px;
-            }
-            p {
-                font-size: 30px;
-            }
-      }
-    }
+
+.home-hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/ppal.jpg");
 }
 
   /*Main*/
@@ -199,10 +179,16 @@
 
  /*DESCARGAS--------------------------*/ 
 
+.descargas-hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/Receta.jpg");
+     }
+ 
+
  .suscripcion {
     margin: $margin;
     .form {
         background-color: rgba(37,37,37,0.3);
+        border-radius: 10px;
         .form-field {
             margin: $margin;
             display: flex;
@@ -240,6 +226,10 @@
 
  /*NOSOTROS-------------------*/ 
 
+ .nosotros-hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/Impresoras2.png");
+     }
+
  .nosotros {
      display: grid;
      grid-template-columns: 1fr 2fr;
@@ -247,6 +237,7 @@
         "titulo titulo titulo"
         "img parrafo parrafo";
         margin-bottom: $margin;
+        margin-top: 2*$margin;
      .titulo {
          grid-area: titulo;
      }
