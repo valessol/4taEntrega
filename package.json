@@ -7,7 +7,7 @@
     "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "author": "Valeria Silveira",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^5.0.0",
@@ -22,5 +22,13 @@
     "url": "https://github.com/valessol/4taEntrega/issues"
   },
   "homepage": "https://github.com/valessol/4taEntrega#readme",
-  "description": ""
+  "description": "Desarrollo Web - Coderhouse 2021",
+  "keywords": [
+    "desarrollo",
+    "web",
+    "diseño",
+    "web",
+    "coderhouse",
+    "pagina"
+  ]
 }
