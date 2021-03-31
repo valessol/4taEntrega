@@ -101,7 +101,29 @@
 
 /* ------------------------Fin del HOME---------------*/
 
+/*NOSOTROS-------------------*/ 
+
+.nosotros-hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/Impresoras2.png");
+     }
+
+ .nosotros {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: stretch;
+        margin-bottom: $margin;
+        margin-top: 2*$margin;
+ }
+
+ /*-----------Fin de Nosotros----------*/ 
+
+
 /* PRODUCTOS--------------------------------*/
+
+.productos-hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/ppaPRODl.jpg");
+}
 
 /*Galeria de productos*/
 
@@ -133,46 +155,58 @@
             }
         }
     }
+
+    .galeriaProductos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .galeriaItems {
+            transition-duration: 0.3s;
+            transition-property: box-shadow, transform; 
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0); 
+            width: 200px;
+        }
+        .galeriaItemCard {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: start;
+            .galeriaFondo {
+                background-color: rgb(231, 227, 227);
+                opacity: 100%;
+            }
     
-    .galeriaEfecto {
-        transition-duration: 0.3s;
-        transition-property: box-shadow, transform; 
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
-
-        .galeriaFondo {
-            background-color: rgb(231, 227, 227);
-            opacity: 100%;
-        }
-
-        .galeriaCard {
-            transform: none;
-        }
-        
-        .galeriaTitulo {
-            font-family: $fuentePpal;
-            font-size: 16px;
-            text-transform: uppercase;
-        }
-        
-        .galeriaPrecio {
-            font-family: $fuenteSec;
-            font-weight: bold;
-        }
-        
-        .button {
-            border-radius: 5px;
-            padding: 0;
-            .linkButton {
-                width: 100%;
+            .galeriaCard {
+                transform: none;
+            }
+            
+            .galeriaTitulo {
                 font-family: $fuentePpal;
-                font-size: 14px;
-                color: $blanco;
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+            
+            .galeriaPrecio {
+                font-family: $fuenteSec;
+                font-weight: bold;
+            }
+            
+            .button {
+                border-radius: 5px;
+                padding: 0;
+                .linkButton {
+                    width: 100%;
+                    font-family: $fuentePpal;
+                    font-size: 14px;
+                    color: $blanco;
+                }
             }
         }
     }
 }
 
-.galeriaEfecto:hover div {
+.galeriaItems:hover div {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform:scale(1.05)
 }
@@ -221,33 +255,7 @@
  /*--------------------Fin de descargas--------------------*/ 
 
 
- /*NOSOTROS-------------------*/ 
-
- .nosotros-hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/Impresoras2.png");
-     }
-
- .nosotros {
-     display: grid;
-     grid-template-columns: 1fr 2fr;
-     grid-template-areas: 
-        "titulo titulo titulo"
-        "img parrafo parrafo";
-        margin-bottom: $margin;
-        margin-top: 2*$margin;
-     .titulo {
-         grid-area: titulo;
-     }
-     .nosotros-img {
-         grid-area: img;
-     }
-     .nosotros-parrafo {
-         grid-area: parrafo;
-     }
- }
-
- /*-----------Fin de Nosotros----------*/ 
-
+ 
 
  /* CONTACTO---------*/ 
 
@@ -382,12 +390,25 @@
         .bloque-testimonios .card-testimonios {
             height: 350px;
         }
+
+        /*PRODUCTOS*/ 
+
+        .accordion-item {
+            margin-right: 0;
+            width: 200px;
+         }
+
+        .galeriaItems {
+            width: 200px;
     }
          
+    
+}
+    
      
      @media screen and (max-width: 1200px) {
          
-         /*Main*/
+         /*HOME -Main*/
 
          .categorias {
             .button {
@@ -416,6 +437,12 @@
             p {
                 font-size: 16px;
             }
+        }
+
+        /*NOSOTROS*/
+
+        .nosotros-img {
+            display: none;
         }
        }
      
@@ -513,5 +540,15 @@
                 }
             }
         }
+
+        /*PRODUCTOS*/ 
+        
+        .galeriaNav {
+            .ordenar, .paginacion {
+                display: none;
+            }
+        }
+        
+        
      }
     

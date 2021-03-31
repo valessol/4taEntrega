@@ -322,7 +322,23 @@ p {
     transform: scale(0.95); }
 
 /* ------------------------Fin del HOME---------------*/
+/*NOSOTROS-------------------*/
+.nosotros-hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/Impresoras2.png"); }
+
+.nosotros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: stretch;
+  margin-bottom: 20px;
+  margin-top: 40px; }
+
+/*-----------Fin de Nosotros----------*/
 /* PRODUCTOS--------------------------------*/
+.productos-hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/ppaPRODl.jpg"); }
+
 /*Galeria de productos*/
 .acordeonItem {
   padding: 20px;
@@ -346,32 +362,43 @@ p {
       margin-bottom: 20px; }
     .galeria .galeriaNav .paginacion .numeracion {
       color: black; }
-  .galeria .galeriaEfecto {
-    transition-duration: 0.3s;
-    transition-property: box-shadow, transform;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0); }
-    .galeria .galeriaEfecto .galeriaFondo {
-      background-color: #e7e3e3;
-      opacity: 100%; }
-    .galeria .galeriaEfecto .galeriaCard {
-      transform: none; }
-    .galeria .galeriaEfecto .galeriaTitulo {
-      font-family: "Montserrat" sans-serif;
-      font-size: 16px;
-      text-transform: uppercase; }
-    .galeria .galeriaEfecto .galeriaPrecio {
-      font-family: "Acme", sans-serif;
-      font-weight: bold; }
-    .galeria .galeriaEfecto .button {
-      border-radius: 5px;
-      padding: 0; }
-      .galeria .galeriaEfecto .button .linkButton {
-        width: 100%;
+  .galeria .galeriaProductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .galeria .galeriaProductos .galeriaItems {
+      transition-duration: 0.3s;
+      transition-property: box-shadow, transform;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+      width: 200px; }
+    .galeria .galeriaProductos .galeriaItemCard {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: start; }
+      .galeria .galeriaProductos .galeriaItemCard .galeriaFondo {
+        background-color: #e7e3e3;
+        opacity: 100%; }
+      .galeria .galeriaProductos .galeriaItemCard .galeriaCard {
+        transform: none; }
+      .galeria .galeriaProductos .galeriaItemCard .galeriaTitulo {
         font-family: "Montserrat" sans-serif;
-        font-size: 14px;
-        color: #ffffff; }
+        font-size: 16px;
+        text-transform: uppercase; }
+      .galeria .galeriaProductos .galeriaItemCard .galeriaPrecio {
+        font-family: "Acme", sans-serif;
+        font-weight: bold; }
+      .galeria .galeriaProductos .galeriaItemCard .button {
+        border-radius: 5px;
+        padding: 0; }
+        .galeria .galeriaProductos .galeriaItemCard .button .linkButton {
+          width: 100%;
+          font-family: "Montserrat" sans-serif;
+          font-size: 14px;
+          color: #ffffff; }
 
-.galeriaEfecto:hover div {
+.galeriaItems:hover div {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transform: scale(1.05); }
 
@@ -404,24 +431,6 @@ p {
     color: #ffffff; }
 
 /*--------------------Fin de descargas--------------------*/
-/*NOSOTROS-------------------*/
-.nosotros-hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/Impresoras2.png"); }
-
-.nosotros {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-areas: "titulo titulo titulo" "img parrafo parrafo";
-  margin-bottom: 20px;
-  margin-top: 40px; }
-  .nosotros .titulo {
-    grid-area: titulo; }
-  .nosotros .nosotros-img {
-    grid-area: img; }
-  .nosotros .nosotros-parrafo {
-    grid-area: parrafo; }
-
-/*-----------Fin de Nosotros----------*/
 /* CONTACTO---------*/
 .contacto-hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/contacto.jpg"); }
@@ -516,10 +525,16 @@ p {
     margin-bottom: 20px; }
   /* ARTICLE- Testimonios*/
   .bloque-testimonios .card-testimonios, .descargas-contenido .bloque-contenido .card-testimonios {
-    height: 350px; } }
+    height: 350px; }
+  /*PRODUCTOS*/
+  .accordion-item {
+    margin-right: 0;
+    width: 200px; }
+  .galeriaItems {
+    width: 200px; } }
 
 @media screen and (max-width: 1200px) {
-  /*Main*/
+  /*HOME -Main*/
   .categorias .button {
     width: 220px; }
   /*ARTICLE- Novedades*/
@@ -532,7 +547,10 @@ p {
   .bloque-testimonios .card-testimonios, .descargas-contenido .bloque-contenido .card-testimonios {
     height: 380px; }
   .bloque-testimonios p, .descargas-contenido .bloque-contenido p {
-    font-size: 16px; } }
+    font-size: 16px; }
+  /*NOSOTROS*/
+  .nosotros-img {
+    display: none; } }
 
 @media screen and (max-width: 992px) {
   .subtitulo2 {
@@ -586,4 +604,7 @@ p {
       color: #ffffff;
       margin-bottom: 0; }
       .testimoniosmax768 p .max768 {
-        margin-bottom: 20px; } }
+        margin-bottom: 20px; }
+  /*PRODUCTOS*/
+  .galeriaNav .ordenar, .galeriaNav .paginacion {
+    display: none; } }
