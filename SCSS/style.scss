@@ -198,38 +198,6 @@
         font-size: 20px;
         font-weight: bold;
     }
-    .form {
-        .form-field {
-            margin: $margin;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: start;
-            .label {
-                font-family: $fuentePpal;
-                font-size: 18px;
-                padding-right: $margin;
-                padding-bottom: $margin/2;
-            }
-            .input {
-                border: 1px solid $gris;
-                border-radius: 5px;
-                padding-left: $margin;
-                text-transform: capitalize;
-                width: 100%;
-            }
-        }
-        .form-check {
-            margin: $margin;
-            display: inline-block;
-            input {
-                display: inline;
-            }
-            div {
-                display: inline;
-            }
-        }
-
-    }
 }
 
 .descargas-contenido {
@@ -287,14 +255,15 @@
      }
 
  .contacto {
-    margin: $margin;
-    .subtitulo2, p {
+    margin: 2*$margin;
+    .subtitulo2 {
         text-align: left;
         grid-area: subtitulo;
+        margin-bottom: $margin;
     }
     .mediosContacto {
         display: grid;
-        grid-template-columns: 1fr, 1fr;
+        grid-template-columns: 600px, 600px;
         grid-template-areas:
             "subtitulo form"  
             "email form"
@@ -313,48 +282,74 @@
     }
     .form {
         grid-area: form;
-        background-color: rgba(37,37,37,0.3);
-        width: 800px;
+        margin: 0;
+        background-color: $gris;
+        width: 600px;
+        height: 650px;
         padding: $margin;
-        margin-left: 15%;
-        border-radius: 10px;
-        .form-field {
-            margin: $margin;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: start;
+        border-radius: $margin;
+        color: $blanco;
             .motivo {
                 width: max-content;
             }
-            .label {
-                font-family: $fuentePpal;
-                font-size: 18px;
-                padding-right: $margin;
-                padding-bottom: $margin/2;
+            .button {
+                margin-left: 45%; 
+                background-color: rgb(105, 104, 104);
+                width: 100px;
+                padding: 0.5*$margin;
             }
-            .input {
-                border: 1px solid $gris;
-                border-radius: 5px;
-                padding-left: $margin;
-                text-transform: capitalize;
-                width: 100%;
+            .button:hover {
+                transform: none;
+                background-color: rgb(241, 135, 135);
             }
-            .form-field-btn {
-                margin-left: 300px; 
-                width: max-content;
-                background-color: $gris;
-                color: $blanco;
-                font-family: $fuentePpal;
-                border-radius: 5px;
-                text-transform: uppercase;
-            }
-        }
-        
+        } 
     }
+
     .descuento {
         grid-area: descuento;
+        margin: $margin $margin $margin 0;
+        .subtitulo2 {
+            margin-bottom: $margin;
+        }
+        p {
+            text-align: left;
+            margin-bottom: 0;
+        }
+        li {
+            font-size: 18px;
+        }
     }
-    p {
-        text-align: left;
+
+    .newsletter {
+        margin: 2*$margin;
+        width: 1200px;
+        height: 200px;
+        background-color: rgb(241, 135, 135);
+        border-radius: $margin;
+        animation-name: suscription;
+        animation-duration: 5s;
+        div {
+            padding: $margin;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .button {
+            padding: 0.5*$margin;
+            margin: $margin;
+            text-align: center;
+            margin-left: 45%;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color:  rgb(105, 104, 104);
+            color: $blanco;
+        }
     }
-}
+
+    @keyframes suscription {
+        from {background-color: $gris;}
+        to {background-color: rgb(241, 135, 135);}
+      }
+    

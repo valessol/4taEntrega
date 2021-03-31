@@ -87,3 +87,39 @@
       }
     }
 }
+
+
+/* Formularios*/ 
+
+.form {
+    .form-field {
+        margin: $margin;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: start;
+        .label {
+            font-family: $fuentePpal;
+            font-size: 18px;
+            padding-right: $margin;
+            padding-bottom: $margin/2;
+        }
+        .input {
+            border: 1px solid $gris;
+            border-radius: 5px;
+            padding-left: $margin;
+            text-transform: capitalize;
+            width: 100%;
+        }
+    }
+    .form-check {
+        margin: $margin;
+        display: inline-block;
+        input {
+            display: inline;
+        }
+        div {
+            display: inline;
+        }
+    }
+
+}

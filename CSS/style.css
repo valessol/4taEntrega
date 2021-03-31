@@ -166,6 +166,32 @@ p {
       .hero .hero-image .hero-text p {
         font-size: 30px; }
 
+/* Formularios*/
+.form .form-field {
+  margin: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start; }
+  .form .form-field .label {
+    font-family: "Montserrat" sans-serif;
+    font-size: 18px;
+    padding-right: 20px;
+    padding-bottom: 10px; }
+  .form .form-field .input {
+    border: 1px solid #252525;
+    border-radius: 5px;
+    padding-left: 20px;
+    text-transform: capitalize;
+    width: 100%; }
+
+.form .form-check {
+  margin: 20px;
+  display: inline-block; }
+  .form .form-check input {
+    display: inline; }
+  .form .form-check div {
+    display: inline; }
+
 /*HOME-----------------------------------------*/
 /* Hero Image */
 .home-hero-image {
@@ -299,29 +325,6 @@ p {
     margin-left: 45%;
     font-size: 20px;
     font-weight: bold; }
-  .suscripcion .form .form-field {
-    margin: 20px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: start; }
-    .suscripcion .form .form-field .label {
-      font-family: "Montserrat" sans-serif;
-      font-size: 18px;
-      padding-right: 20px;
-      padding-bottom: 10px; }
-    .suscripcion .form .form-field .input {
-      border: 1px solid #252525;
-      border-radius: 5px;
-      padding-left: 20px;
-      text-transform: capitalize;
-      width: 100%; }
-  .suscripcion .form .form-check {
-    margin: 20px;
-    display: inline-block; }
-    .suscripcion .form .form-check input {
-      display: inline; }
-    .suscripcion .form .form-check div {
-      display: inline; }
 
 .descargas-contenido {
   margin-top: 40px;
@@ -357,13 +360,14 @@ p {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/contacto.jpg"); }
 
 .contacto {
-  margin: 20px; }
-  .contacto .subtitulo2, .contacto p {
+  margin: 40px; }
+  .contacto .subtitulo2 {
     text-align: left;
-    grid-area: subtitulo; }
+    grid-area: subtitulo;
+    margin-bottom: 20px; }
   .contacto .mediosContacto {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 600px, 600px;
     grid-template-areas: "subtitulo form"   "email form" "whats form" "horario form" "descuento form"; }
   .contacto .email {
     grid-area: email; }
@@ -373,38 +377,61 @@ p {
     grid-area: horario; }
   .contacto .form {
     grid-area: form;
-    background-color: rgba(37, 37, 37, 0.3);
-    width: 800px;
+    margin: 0;
+    background-color: #252525;
+    width: 600px;
+    height: 650px;
     padding: 20px;
-    margin-left: 15%;
-    border-radius: 10px; }
-    .contacto .form .form-field {
-      margin: 20px;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: start; }
-      .contacto .form .form-field .motivo {
-        width: max-content; }
-      .contacto .form .form-field .label {
-        font-family: "Montserrat" sans-serif;
-        font-size: 18px;
-        padding-right: 20px;
-        padding-bottom: 10px; }
-      .contacto .form .form-field .input {
-        border: 1px solid #252525;
-        border-radius: 5px;
-        padding-left: 20px;
-        text-transform: capitalize;
-        width: 100%; }
-      .contacto .form .form-field .form-field-btn {
-        margin-left: 300px;
-        width: max-content;
-        background-color: #252525;
-        color: #ffffff;
-        font-family: "Montserrat" sans-serif;
-        border-radius: 5px;
-        text-transform: uppercase; }
-  .contacto .descuento {
-    grid-area: descuento; }
-  .contacto p {
-    text-align: left; }
+    border-radius: 20px;
+    color: #ffffff; }
+    .contacto .form .motivo {
+      width: max-content; }
+    .contacto .form .button {
+      margin-left: 45%;
+      background-color: #696868;
+      width: 100px;
+      padding: 10px; }
+    .contacto .form .button:hover {
+      transform: none;
+      background-color: #f18787; }
+
+.descuento {
+  grid-area: descuento;
+  margin: 20px 20px 20px 0; }
+  .descuento .subtitulo2 {
+    margin-bottom: 20px; }
+  .descuento p {
+    text-align: left;
+    margin-bottom: 0; }
+  .descuento li {
+    font-size: 18px; }
+
+.newsletter {
+  margin: 40px;
+  width: 1200px;
+  height: 200px;
+  background-color: #f18787;
+  border-radius: 20px;
+  animation-name: suscription;
+  animation-duration: 5s; }
+  .newsletter div {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; }
+  .newsletter .button {
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    margin-left: 45%;
+    font-size: 20px;
+    font-weight: bold; }
+  .newsletter .button:hover {
+    background-color: #696868;
+    color: #ffffff; }
+
+@keyframes suscription {
+  from {
+    background-color: #252525; }
+  to {
+    background-color: #f18787; } }
