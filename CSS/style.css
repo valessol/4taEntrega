@@ -197,7 +197,7 @@ p {
     .hero .hero-image .hero-text {
       text-align: center;
       font-family: "Montserrat" sans-serif;
-      padding-top: 150px;
+      padding-top: 130px;
       left: 50%;
       color: white; }
       .hero .hero-image .hero-text h1 {
@@ -231,6 +231,34 @@ p {
   .form .form-check div {
     display: inline; }
 
+/* Media Queries*/
+@media screen and (max-width: 1400px) {
+  /* Hero Image */
+  .hero .hero-image .hero-text h1 {
+    font-size: 60px; } }
+
+@media screen and (max-width: 992px) {
+  /* Hero Image */
+  .hero .hero-image {
+    height: 250px; }
+    .hero .hero-image .hero-text {
+      padding-top: 80px; }
+      .hero .hero-image .hero-text h1 {
+        font-size: 40px; }
+      .hero .hero-image .hero-text p {
+        font-size: 20px; } }
+
+@media screen and (max-width: 768px) {
+  /* Hero Image */
+  .hero .hero-image {
+    height: 200px; }
+    .hero .hero-image .hero-text {
+      padding-top: 60px; }
+      .hero .hero-image .hero-text h1 {
+        font-size: 30px; }
+      .hero .hero-image .hero-text p {
+        font-size: 16px; } }
+
 /*HOME-----------------------------------------*/
 /* Hero Image */
 .home-hero-image {
@@ -261,14 +289,15 @@ p {
     background-color: #252525;
     border-radius: 20px; }
     .articulo-testimonios .bloque-testimonios .testimonios img, .descargas-contenido .bloque-testimonios .testimonios img, .descargas-contenido .bloque-contenido .testimonios img {
-      width: 150px;
-      height: 150px;
       margin: 20px; }
     .articulo-testimonios .bloque-testimonios .card-testimonios, .descargas-contenido .bloque-testimonios .card-testimonios, .descargas-contenido .bloque-contenido .card-testimonios {
       background-color: #252525;
       height: 300px; }
     .articulo-testimonios .bloque-testimonios p, .descargas-contenido .bloque-testimonios p, .descargas-contenido .bloque-contenido p {
       margin-bottom: 0; }
+
+.testimoniosmax768 {
+  display: none; }
 
 /*ARTICLE- Novedades*/
 .novedades {
@@ -288,8 +317,7 @@ p {
     padding: 10px;
     font-size: 18px;
     text-align: center;
-    font-weight: bold;
-    text-align: center; }
+    font-weight: bold; }
   .novedades button:hover {
     transform: scale(0.95); }
 
@@ -474,3 +502,88 @@ p {
     background-color: #252525; }
   to {
     background-color: #f18787; } }
+
+/*Media queries-------------------------------------- */
+@media screen and (max-width: 1400px) {
+  /*Main*/
+  .categorias .button {
+    width: 250px; }
+  /*ARTICLE- Novedades*/
+  .novedades .card-novedades {
+    width: 340px;
+    height: 220px; }
+  .novedades .button {
+    margin-bottom: 20px; }
+  /* ARTICLE- Testimonios*/
+  .bloque-testimonios .card-testimonios, .descargas-contenido .bloque-contenido .card-testimonios {
+    height: 350px; } }
+
+@media screen and (max-width: 1200px) {
+  /*Main*/
+  .categorias .button {
+    width: 220px; }
+  /*ARTICLE- Novedades*/
+  .novedades .card-novedades {
+    width: 280px;
+    height: 270px; }
+  .novedades .button {
+    margin-bottom: 20px; }
+  /* ARTICLE- Testimonios*/
+  .bloque-testimonios .card-testimonios, .descargas-contenido .bloque-contenido .card-testimonios {
+    height: 380px; }
+  .bloque-testimonios p, .descargas-contenido .bloque-contenido p {
+    font-size: 16px; } }
+
+@media screen and (max-width: 992px) {
+  .subtitulo2 {
+    font-size: 25px; }
+  /*HOME - Main - Categorias*/
+  .categorias {
+    flex-wrap: wrap; }
+    .categorias .button {
+      margin: 20px; }
+  /*ARTICLE- Novedades*/
+  .novedades {
+    flex-wrap: wrap; }
+    .novedades .card-novedades {
+      width: 600px;
+      height: 160px; }
+      .novedades .card-novedades .subtitulo3 {
+        font-size: 20px; }
+      .novedades .card-novedades p {
+        font-size: 16px; }
+    .novedades .button {
+      margin-bottom: 20px; }
+  /* ARTICLE- Testimonios*/
+  .articulo-testimonios .subtitulo2, .descargas-contenido .subtitulo2 {
+    font-size: 25px;
+    text-align: center; }
+  .articulo-testimonios .bloque-testimonios p, .descargas-contenido .bloque-testimonios p, .descargas-contenido .bloque-contenido p {
+    font-size: 16px; } }
+
+@media screen and (max-width: 768px) {
+  /*HOME - Main - Categorias*/
+  .categorias .button {
+    width: 210px;
+    font-size: 18px; }
+  /*ARTICLE- Novedades*/
+  .novedades .card-novedades {
+    width: 500px; }
+  /* ARTICLE- Testimonios*/
+  .bloque-testimonios, .descargas-contenido .bloque-contenido {
+    display: none; }
+  .testimoniosmax768 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #252525;
+    border-radius: 20px;
+    margin: 20px; }
+    .testimoniosmax768 img {
+      margin: 20px; }
+    .testimoniosmax768 p {
+      font-size: 16px;
+      color: #ffffff;
+      margin-bottom: 0; }
+      .testimoniosmax768 p .max768 {
+        margin-bottom: 20px; } }

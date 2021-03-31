@@ -75,7 +75,7 @@
         .hero-text {
             text-align: center;
             font-family: $fuentePpal;
-            padding-top: 150px;
+            padding-top: 130px;
             left: 50%;
             color: white;
             h1 {
@@ -122,4 +122,59 @@
         }
     }
 
+}
+
+/* Media Queries*/ 
+
+@media screen and (max-width: 1400px) {
+
+   /* Hero Image */ 
+
+.hero .hero-image .hero-text h1 {
+                font-size: 60px;
+            }
+      }
+    
+
+@media screen and (max-width: 1200px) {
+    
+  }
+
+  
+@media screen and (max-width: 992px) {
+   /* Hero Image */ 
+
+    .hero .hero-image {
+        height: 250px;
+        .hero-text {
+            padding-top: 80px;
+            h1 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+   /* Hero Image */ 
+
+   .hero .hero-image {
+    height: 200px;
+    .hero-text {
+        padding-top: 60px;
+        h1 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}
+}
+
+@media screen and (max-width: 576px) {
+   
 }
