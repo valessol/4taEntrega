@@ -353,11 +353,26 @@ p {
 
 /*-----------Fin de Nosotros----------*/
 /* CONTACTO---------*/
+.contacto-hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/contacto.jpg"); }
+
 .contacto {
   margin: 20px; }
-  .contacto .parrafo {
-    text-align: center; }
+  .contacto .subtitulo2, .contacto p {
+    text-align: left;
+    grid-area: subtitulo; }
+  .contacto .mediosContacto {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas: "subtitulo form"   "email form" "whats form" "horario form" "descuento form"; }
+  .contacto .email {
+    grid-area: email; }
+  .contacto .whats {
+    grid-area: whats; }
+  .contacto .horario {
+    grid-area: horario; }
   .contacto .form {
+    grid-area: form;
     background-color: rgba(37, 37, 37, 0.3);
     width: 800px;
     padding: 20px;
@@ -389,3 +404,7 @@ p {
         font-family: "Montserrat" sans-serif;
         border-radius: 5px;
         text-transform: uppercase; }
+  .contacto .descuento {
+    grid-area: descuento; }
+  .contacto p {
+    text-align: left; }

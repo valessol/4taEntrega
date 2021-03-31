@@ -282,12 +282,37 @@
 
  /* CONTACTO---------*/ 
 
+ .contacto-hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/contacto.jpg");
+     }
+
  .contacto {
     margin: $margin;
-    .parrafo {
-        text-align: center;
+    .subtitulo2, p {
+        text-align: left;
+        grid-area: subtitulo;
+    }
+    .mediosContacto {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-areas:
+            "subtitulo form"  
+            "email form"
+            "whats form"
+            "horario form"
+            "descuento form";
+    }
+    .email {
+        grid-area: email;
+    }
+    .whats {
+        grid-area: whats;
+    }
+    .horario {
+        grid-area: horario;
     }
     .form {
+        grid-area: form;
         background-color: rgba(37,37,37,0.3);
         width: 800px;
         padding: $margin;
@@ -325,5 +350,11 @@
             }
         }
         
+    }
+    .descuento {
+        grid-area: descuento;
+    }
+    p {
+        text-align: left;
     }
 }

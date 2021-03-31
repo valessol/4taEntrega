@@ -65,73 +65,76 @@
             </div>
         </header>
 
-        <main class="contacto">
-            <!-- Titulo -->
-            <h1 class="titulo">
-                Contacto
-            </h1>
-
-            <!-- Formulario de suscripción -->
-            <div class="suscripcion">
-                <div>
-                    <h2 class="subtitulo">
-                        Nuestros medios de contacto:
-                    </h2>
-                    <p class="parrafo">Escribinos tus comentarios, dudas o sugerencias por correo electrónico, o contactanos por nuestras redes sociales, por whatsapp o mediante al formulario de contacto al final de esta página.</p>
-                    <p>Si tienes consultas por presupuestos o pedidos personalizados, puedes realizarlas por los mismos medios.</p>
-                    <div class="parrafo">
-                        Email: decorarteaccesoriosimpresos@gmail.com
-                    </div>
-                    <div class="parrafo">
-                        Whatsapp: +54-11-7361-1513
-                    </div>
-                    <div class="parrafo">
-                        Horario de atención: Lunes a viernes de 10 a 18hs
-                    </div>
-                    <h2 class="subtitulo">
-                        ¿Has utilizado nuestros productos?
-                    </h2>
-                    <p class="parrafo">Comparte tu trabajo con nosotros y obtén un 10%OFF en toda la tienda en compras superiores a $300.</p>
-                    <p class="parrafo">¿Cómo? Hay dos formas en que puedes obtener este descuento:</p>
-                    <div class="parrafo">
-                        <ol>
-                            <li>Sube tu foto a tus redes sociales (Facebook o Instagram) y ¡etiquetanos!</li>
-                            <li>Comparte tu testimonio sobre tu experiencia utilizando nuestros productos, o cualquier cosa que desees destacar o sugerir sobre nuestra atención, en el formulario a continuación.</li>
-                        </ol>
-                    </div>
+        <!-- Imagen principal -->
+        <section class="hero">
+            <div class="contacto-hero-image hero-image img-fluid">
+                <div class="hero-text">
+                  <h1>Contactanos</h1>
                 </div>
-            
-                <form class="form">
-                    <div class="form-field">
-                        <label for="nombre" class="label">Nombre</label>
-                        <input type="text" name="nombre" class="input" value="nombre">
+              </div>
+        </section>
+
+        <main class="contacto">
+            <!-- Formulario de contacto -->
+        
+                    <div class="mediosContacto">
+                        <h2 class="subtitulo2">
+                            Nuestros medios de contacto:
+                        </h2>
+                        <div class="email">
+                            Email: decorarteaccesoriosimpresos@gmail.com
+                        </div>
+                        <div class="whats">
+                            Whatsapp: +54-11-7361-1513
+                        </div>
+                        <div class="horario">
+                            Horario de atención: Lunes a viernes de 10 a 18hs
+                        </div>
+                        <form class="form">
+                            <div class="form-field">
+                                <label for="nombre" class="label">Nombre</label>
+                                <input type="text" name="nombre" class="input" value="nombre">
+                            </div>
+                            <div class="form-field">
+                                <label for="email" class="label">E-mail</label>
+                                <input type="text" name="email" class="input" value="email">
+                            </div>
+                            <div class="form-field">
+                                <label for="motivo" class="label">Seleccione motivo</label>
+                                <select class="motivo" name="motivo">
+                                    <option value="consulta">Consulta</option>
+                                    <option value="presupuesto">Pedido de presupuesto</option>
+                                    <option value="sugerencia">Sugerencia</option>
+                                    <option value="testimonio">Testimonio</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label for="comentario" class="label">Comentarios</label>
+                                <textarea name="comentario" cols="30" rows="10">Deja tu comentario aquí</textarea>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="acepta" value="1" />
+                                Acepto suscribirme al newsletter
+                            </div>    
+                            <div class="form-field">
+                                <button type="submit" class="btn form-field-btn">Enviar</button>
+                            </div>
+                        </form>
+                        <div class="descuento">
+                            <h2 class="subtitulo2">
+                                ¿Has utilizado nuestros productos?
+                            </h2>
+                            <p>Comparte tu trabajo con nosotros y obtén un 10%OFF en toda la tienda en compras superiores a $300.</p>
+                            <p>¿Cómo? Hay dos formas en que puedes obtener este descuento:</p>
+                            <div>
+                                <ol>
+                                    <li>Sube tu foto a tus redes sociales (Facebook o Instagram) y ¡etiquetanos!</li>
+                                    <li>Comparte tu testimonio sobre tu experiencia utilizando nuestros productos, o cualquier cosa que desees destacar o sugerir sobre nuestra atención, en el formulario a continuación.</li>
+                                </ol>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-field">
-                        <label for="email" class="label">E-mail</label>
-                        <input type="text" name="email" class="input" value="email">
-                    </div>
-                    <div class="form-field">
-                        <label for="motivo" class="label">Seleccione motivo</label>
-                        <select class="motivo" name="motivo">
-                            <option value="consulta">Consulta</option>
-                            <option value="presupuesto">Pedido de presupuesto</option>
-                            <option value="sugerencia">Sugerencia</option>
-                            <option value="testimonio">Testimonio</option>
-                        </select>
-                    </div>
-                    <div class="form-field">
-                        <label for="comentario" class="label">Comentarios</label>
-                        <textarea name="comentario" cols="30" rows="10">Deja tu comentario aquí</textarea>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="acepta" value="1" />
-                        Acepto suscribirme al newsletter
-                    </div>    
-                    <div class="form-field">
-                        <button type="submit" class="btn form-field-btn">Enviar</button>
-                    </div>
-                </form>
-            </div>
+                    
         </main>
 
 
