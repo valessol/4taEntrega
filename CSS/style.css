@@ -112,25 +112,44 @@
 
 /* FOOTER -------------------------------*/
 footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  justify-items: flex-start;
   background-color: #252525;
   color: #ffffff;
   margin-top: 20px;
   padding: 20px;
   font-family: "Montserrat" sans-serif; }
+  footer .menuFooter {
+    list-style-type: none; }
+    footer .menuFooter a {
+      text-decoration: none;
+      color: #ffffff; }
+    footer .menuFooter .redesSociales {
+      width: 40px;
+      height: 40px; }
+  footer .logoFooter {
+    width: 150px;
+    height: 150px; }
 
-.menuFooter {
-  list-style-type: none; }
-  .menuFooter a {
-    text-decoration: none;
-    color: #ffffff; }
+@media screen and (max-width: 992px) {
+  footer .menufooter {
+    font-size: 14px; }
+  footer .logoFooter {
+    width: 100px;
+    height: 100px; } }
 
-.redesSociales {
-  width: 40px;
-  height: 40px; }
-
-.logoFooter {
-  width: 150px;
-  height: 150px; }
+@media screen and (max-width: 768px) {
+  footer .menufooter {
+    font-size: 12px; }
+    footer .menufooter .redesSociales {
+      width: 25px;
+      height: 25px; }
+  footer .logoFooter {
+    width: 100px;
+    height: 100px; } }
 
 /* Componentes - Titulos, subtitulos, botones---------------------*/
 /*Titulos - h1-----*/
