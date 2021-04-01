@@ -340,7 +340,10 @@ p {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/ppaPRODl.jpg"); }
 
 /*Galeria de productos*/
-.acordeonItem {
+.acordeon768 {
+  display: none; }
+
+.acordeon .acordeonItem {
   padding: 20px;
   transition: transform 1s;
   font-family: "Montserrat" sans-serif;
@@ -371,7 +374,8 @@ p {
       transition-duration: 0.3s;
       transition-property: box-shadow, transform;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
-      width: 200px; }
+      width: 200px;
+      margin-bottom: 20px; }
     .galeria .galeriaProductos .galeriaItemCard {
       display: flex;
       flex-direction: column;
@@ -606,5 +610,21 @@ p {
       .testimoniosmax768 p .max768 {
         margin-bottom: 20px; }
   /*PRODUCTOS*/
+  .acordeon768 {
+    display: block;
+    margin: 0px 10px 20px 30%; }
+    .acordeon768 .acordeonItem {
+      padding: 20px;
+      transition: transform 1s;
+      font-family: "Montserrat" sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 20px; }
+  .acordeon {
+    display: none; }
   .galeriaNav .ordenar, .galeriaNav .paginacion {
-    display: none; } }
+    display: none; }
+  .galeriaProductos {
+    justify-content: center; }
+    .galeriaProductos .galeriaItems {
+      width: 150px; } }

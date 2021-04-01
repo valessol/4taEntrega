@@ -127,12 +127,18 @@
 
 /*Galeria de productos*/
 
-.acordeonItem {
-    padding: $margin;
-    transition: transform 1s;
-    font-family: $fuentePpal;
-    text-transform: uppercase;
- }
+.acordeon768 {
+    display: none;
+}
+
+.acordeon {
+    .acordeonItem {
+        padding: $margin;
+        transition: transform 1s;
+        font-family: $fuentePpal;
+        text-transform: uppercase;
+    }
+}
  .acordeonItem:hover {
     background-color: rgb(247, 173, 173);
     color:$gris;
@@ -166,6 +172,7 @@
             transition-property: box-shadow, transform; 
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0); 
             width: 200px;
+            margin-bottom: $margin;
         }
         .galeriaItemCard {
             display: flex;
@@ -542,13 +549,34 @@
         }
 
         /*PRODUCTOS*/ 
-        
+
+        .acordeon768 {
+            display: block;
+            margin: 0px 10px 20px 30%;
+            .acordeonItem {
+                padding: $margin;
+                transition: transform 1s;
+                font-family: $fuentePpal;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+
+        .acordeon {
+            display: none;
+        }
+
         .galeriaNav {
             .ordenar, .paginacion {
                 display: none;
             }
         }
-        
-        
+        .galeriaProductos {
+            justify-content: center;
+            .galeriaItems {
+                width: 150px;
+            }
+        }
      }
     
