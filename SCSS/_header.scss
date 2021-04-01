@@ -1,20 +1,29 @@
-.menuSecundario {
-    margin-top: $margin/2;
-    margin-bottom: $margin;
-    a {
-        text-decoration: none;
-        color: $gris;
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-areas: 
+    "logo . menuSecundario"
+    "logo menuPrincipal menuPrincipal";
+    .logo {
+      grid-area: logo;
+      width: $margin*10;
+      height: $margin*10;
+      padding: 0px;
+      margin: $margin 0 $margin 0;
+    }
+    .menuSecundario {
+      grid-area: menuSecundario;
+      margin-top: $margin/2;
+      margin-bottom: $margin;
+      a {
+          text-decoration: none;
+          color: $gris;
+      }
+    }
+    .topnav {
+      grid-area: menuPrincipal;
     }
 }
-
-.logo {
-    width: $margin*10;
-    height: $margin*10;
-    padding: 0px;
-    margin: $margin;
-}
-
-/*Menu Principal con mediaquerys*/ 
 
 .topnav {
     text-transform: uppercase;
@@ -97,12 +106,33 @@
 
   
   @media screen and (max-width: 992px) {
+
+    header {
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+        "logo"
+        "menuPrincipal";
+        .logo {
+          width: 150px;
+          height: 150px;
+          justify-self: center;
+          margin-bottom: 0;
+        }
+        .menuSecundario {
+          display: none;
+        }
+    }
+
     .topnav a:not(:first-child), .dropdown .dropbtn {
       display: none;
     }
     .topnav a.icon {
       float: right;
       display: block;
+      width: 50px;
+    }
+    .topnav .active {
+      font-weight: lighter;
     }
   }
   

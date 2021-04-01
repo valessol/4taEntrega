@@ -7,20 +7,26 @@
 
 /* Variables */
 /*HEADER-----------------------------*/
-.menuSecundario {
-  margin-top: 10px;
-  margin-bottom: 20px; }
-  .menuSecundario a {
-    text-decoration: none;
-    color: #252525; }
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-areas: "logo . menuSecundario" "logo menuPrincipal menuPrincipal"; }
+  header .logo {
+    grid-area: logo;
+    width: 200px;
+    height: 200px;
+    padding: 0px;
+    margin: 20px 0 20px 0; }
+  header .menuSecundario {
+    grid-area: menuSecundario;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+    header .menuSecundario a {
+      text-decoration: none;
+      color: #252525; }
+  header .topnav {
+    grid-area: menuPrincipal; }
 
-.logo {
-  width: 200px;
-  height: 200px;
-  padding: 0px;
-  margin: 20px; }
-
-/*Menu Principal con mediaquerys*/
 .topnav {
   text-transform: uppercase;
   text-align: center;
@@ -84,11 +90,24 @@
     padding: 10px; } }
 
 @media screen and (max-width: 992px) {
+  header {
+    grid-template-columns: 1fr;
+    grid-template-areas: "logo" "menuPrincipal"; }
+    header .logo {
+      width: 150px;
+      height: 150px;
+      justify-self: center;
+      margin-bottom: 0; }
+    header .menuSecundario {
+      display: none; }
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none; }
   .topnav a.icon {
     float: right;
-    display: block; } }
+    display: block;
+    width: 50px; }
+  .topnav .active {
+    font-weight: lighter; } }
 
 @media screen and (max-width: 992px) {
   .topnav.responsive {
@@ -277,6 +296,20 @@ p {
         font-size: 30px; }
       .hero .hero-image .hero-text p {
         font-size: 16px; } }
+
+/* Mapa de Sitio --------------------------*/
+.sitemap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .sitemap .sitemapPage div {
+    font-size: 20px;
+    font-weight: bold; }
+  .sitemap .sitemapPage ul li a {
+    color: #252525; }
+  .sitemap .sitemapPage ul li:hover a {
+    color: #f7adad; }
 
 /*HOME-----------------------------------------*/
 /* Hero Image */
