@@ -450,11 +450,14 @@ p {
     grid-template-columns: 600px, 600px;
     grid-template-areas: "subtitulo form"   "email form" "whats form" "horario form" "descuento form"; }
   .contacto .email {
-    grid-area: email; }
+    grid-area: email;
+    font-size: 18px; }
   .contacto .whats {
-    grid-area: whats; }
+    grid-area: whats;
+    font-size: 18px; }
   .contacto .horario {
-    grid-area: horario; }
+    grid-area: horario;
+    font-size: 18px; }
   .contacto .form {
     grid-area: form;
     margin: 0;
@@ -487,8 +490,8 @@ p {
     font-size: 18px; }
 
 .newsletter {
-  margin: 40px;
-  width: 1200px;
+  margin: 40px 0 40px 0;
+  width: 100%;
   height: 200px;
   background-color: #f18787;
   border-radius: 20px;
@@ -535,7 +538,10 @@ p {
     margin-right: 0;
     width: 200px; }
   .galeriaItems {
-    width: 200px; } }
+    width: 200px; }
+  /* CONTACTO */
+  .contacto .subtitulo2, .descuento .subtitulo2 {
+    font-size: 25px; } }
 
 @media screen and (max-width: 1200px) {
   /*HOME -Main*/
@@ -554,7 +560,26 @@ p {
     font-size: 16px; }
   /*NOSOTROS*/
   .nosotros-img {
-    display: none; } }
+    display: none; }
+  /*DESCARGAS*/
+  .suscripcion .button {
+    margin-left: 40%; }
+  /* CONTACTO */
+  .contacto .subtitulo2 {
+    text-align: center;
+    grid-area: subtitulo; }
+  .contacto .mediosContacto {
+    display: block; }
+    .contacto .mediosContacto .email, .contacto .mediosContacto .whats, .contacto .mediosContacto .horario {
+      text-align: center; }
+    .contacto .mediosContacto .horario {
+      margin-bottom: 20px; }
+    .contacto .mediosContacto .form {
+      margin-left: 15%; }
+  .descuento {
+    margin: 40px 20px 20px 0; }
+    .descuento p {
+      text-align: center; } }
 
 @media screen and (max-width: 992px) {
   .subtitulo2 {
@@ -581,7 +606,27 @@ p {
     font-size: 25px;
     text-align: center; }
   .articulo-testimonios .bloque-testimonios p, .descargas-contenido .bloque-testimonios p, .descargas-contenido .bloque-contenido p {
-    font-size: 16px; } }
+    font-size: 16px; }
+  /*DESCARGAS*/
+  .suscripcion .button {
+    margin-left: 35%; }
+  .descargas-contenido {
+    display: block; }
+    .descargas-contenido .subtitulo2 {
+      width: 100%;
+      text-align: center; }
+    .descargas-contenido .bloque-contenido {
+      width: 100%;
+      height: 400px; }
+  /* CONTACTO */
+  .contacto .mediosContacto .form {
+    margin-left: 0%; }
+  .newsletter {
+    height: 180px; }
+    .newsletter div {
+      font-size: 25px; }
+    .newsletter .button {
+      margin-left: 40%; } }
 
 @media screen and (max-width: 768px) {
   /*HOME - Main - Categorias*/
@@ -627,4 +672,24 @@ p {
   .galeriaProductos {
     justify-content: center; }
     .galeriaProductos .galeriaItems {
-      width: 150px; } }
+      width: 150px; }
+  /* CONTACTO */
+  .contacto .subtitulo2 {
+    font-size: 20px; }
+  .contacto .mediosContacto .email, .contacto .mediosContacto .whats, .contacto .mediosContacto .horario {
+    font-size: 16px; }
+  .contacto .form {
+    margin-left: 0%;
+    width: 500px; }
+    .contacto .form .form-field .label {
+      font-size: 16px; }
+  .descuento .subtitulo2 {
+    font-size: 20px; }
+  .descuento p, .descuento li {
+    font-size: 16px; }
+  .newsletter {
+    height: 220px; }
+    .newsletter div {
+      font-size: 25px; }
+    .newsletter .button {
+      margin-left: 38%; } }
