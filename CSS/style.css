@@ -12,6 +12,100 @@ body {
   font-size: 16px; }
 
 /* Variables */
+/* Componentes---------------------*/
+/*Titulos */
+.titulo, .subtitulo2, .subtitulo3 {
+  text-align: center; }
+
+.titulo, .subtitulo2 {
+  font-family: "Montserrat" sans-serif;
+  text-transform: uppercase;
+  border: none; }
+
+.titulo {
+  font-size: 4rem; }
+
+.subtitulo2 {
+  font-size: 2.5rem;
+  margin: 2rem; }
+
+.subtitulo3 {
+  font-family: "Acme", sans-serif;
+  font-size: 2.5rem;
+  margin-top: 1rem; }
+
+@media (min-width: 768px) {
+  .titulo {
+    font-size: 6rem; }
+  .subtitulo2 {
+    font-size: 3rem; }
+  .par {
+    font-size: 2rem; } }
+
+@media (min-width: 992px) {
+  .titulo {
+    font-size: 8rem; } }
+
+/*Parrafos---*/
+.par {
+  font-family: "Montserrat" sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1rem; }
+
+/*Botones*/
+.button {
+  color: white;
+  background-color: #252525;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 1s;
+  font-family: "Montserrat" sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 90%;
+  text-align: center; }
+
+.button:hover {
+  background-color: #f18787;
+  color: #252525;
+  border: none;
+  transform: scale(0.95); }
+
+@media (min-width: 768px) {
+  .button {
+    width: 70%; } }
+
+@media (min-width: 992px) {
+  .button {
+    width: 14rem; } }
+
+/* Hero Image */
+.hero {
+  height: 30rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 4rem; }
+  .hero .hero__content {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat" sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .hero .hero__content .titulo {
+      text-transform: none; }
+    .hero .hero__content .par {
+      font-size: 2rem; }
+
 /*HEADER-----------------------------*/
 header {
   display: grid;
@@ -143,7 +237,7 @@ footer {
     flex-direction: column;
     align-items: center;
     color: #ffffff;
-    margin-top: 20px;
+    margin-top: 2rem;
     padding: 20px;
     font-family: "Montserrat" sans-serif; }
   footer .footer__menu {
@@ -168,100 +262,6 @@ footer {
     flex-wrap: nowrap;
     justify-content: space-around;
     justify-items: flex-start; } }
-
-/* Componentes - Titulos, subtitulos, botones---------------------*/
-/*Titulos */
-.titulo, .subtitulo2, .subtitulo3 {
-  text-align: center; }
-
-.titulo, .subtitulo2 {
-  font-family: "Montserrat" sans-serif;
-  text-transform: uppercase;
-  border: none; }
-
-.titulo {
-  font-size: 4rem; }
-
-.subtitulo2 {
-  font-size: 2.5rem;
-  margin: 2rem; }
-
-.subtitulo3 {
-  font-family: "Acme", sans-serif;
-  font-size: 2.5rem;
-  margin-top: 1rem; }
-
-@media (min-width: 768px) {
-  .titulo {
-    font-size: 6rem; }
-  .subtitulo2 {
-    font-size: 3rem; }
-  .par {
-    font-size: 2rem; } }
-
-@media (min-width: 992px) {
-  .titulo {
-    font-size: 8rem; } }
-
-/*Parrafos---*/
-.par {
-  font-family: "Montserrat" sans-serif;
-  font-size: 1.8rem;
-  text-align: center;
-  padding: 1rem; }
-
-/*Botones*/
-.button {
-  color: white;
-  background-color: #252525;
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: transform 1s;
-  font-family: "Montserrat" sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  width: 90%;
-  text-align: center; }
-
-.button:hover {
-  background-color: #f18787;
-  color: #252525;
-  border: none;
-  transform: scale(0.95); }
-
-@media (min-width: 768px) {
-  .button {
-    width: 70%; } }
-
-@media (min-width: 992px) {
-  .button {
-    width: 14rem; } }
-
-/* Hero Image */
-.hero {
-  height: 30rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin-bottom: 4rem; }
-  .hero .hero__content {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    height: 100%;
-    font-family: "Montserrat" sans-serif;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .hero .hero__content .titulo {
-      text-transform: none; }
-    .hero .hero__content .par {
-      font-size: 2rem; }
 
 /* Mapa de Sitio --------------------------*/
 .sitemap {
@@ -365,12 +365,180 @@ footer {
     max-width: 800px;
     margin: 0 auto; } }
 
-/*NOSOTROS-------------------*/
-/*-----------Fin de Nosotros----------*/
-/* PRODUCTOS--------------------------------*/
-/*Galeria de productos*/
-/*-----------------Fin de Productos---------------*/
-/*DESCARGAS--------------------------*/
-/*--------------------Fin de descargas--------------------*/
-/* CONTACTO---------*/
-/*Media queries-------------------------------------- */
+/*Nosotros----------------------------------*/
+/* Hero Image */
+.hero--about-us {
+  background-image: url("../img/Impresoras2.png"); }
+
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  .nosotros__img {
+    margin-bottom: 2rem; }
+
+@media (min-width: 992px) {
+  .nosotros {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: stretch; } }
+
+/*Productos------------------------------------------*/
+/* Hero Image */
+.hero--products {
+  background-image: url("../img/prod.jpg"); }
+
+/*Acordeon*/
+.productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .productos__acordeon {
+    width: 80%; }
+    .productos__acordeon .acordeon__item {
+      font-size: 1.8rem;
+      transition: transform 1s;
+      font-family: "Montserrat" sans-serif;
+      text-transform: uppercase; }
+    .productos__acordeon .acordeon__item:hover {
+      background-color: #f7adad;
+      color: #252525;
+      border: none; }
+  .productos__galeria {
+    display: block;
+    margin: 1rem; }
+    .productos__galeria .galeria__nav {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center; }
+      .productos__galeria .galeria__nav--margin {
+        margin: 1rem;
+        padding: 0; }
+    .productos__galeria .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto; }
+      .productos__galeria .galeria__items {
+        transition-duration: 0.3s;
+        transition-property: box-shadow, transform;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+        width: 20rem;
+        margin-bottom: 2rem;
+        padding: .5rem; }
+        .productos__galeria .galeria__items--display {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content: start; }
+          .productos__galeria .galeria__items--display .galeria--bg {
+            background-color: #e7e3e3;
+            opacity: 100%; }
+          .productos__galeria .galeria__items--display .galeria__card {
+            transform: none; }
+            .productos__galeria .galeria__items--display .galeria__card .galeria__title {
+              font-family: "Montserrat" sans-serif;
+              font-size: 16px;
+              text-transform: uppercase; }
+            .productos__galeria .galeria__items--display .galeria__card .galeria__precio {
+              font-family: "Acme", sans-serif;
+              font-weight: bold; }
+            .productos__galeria .galeria__items--display .galeria__card .galeria__btn {
+              font-size: 14px;
+              color: #ffffff;
+              font-weight: bold; }
+      .productos__galeria .galeria__items:hover div {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transform: scale(1.05); }
+
+@media (min-width: 768px) {
+  .productos {
+    flex-direction: row;
+    align-items: flex-start; }
+    .productos__acordeon {
+      width: 18rem; }
+      .productos__acordeon .acordeon__item {
+        text-align: left;
+        margin-left: 0;
+        padding-left: 0; }
+      .productos__acordeon .subtitulo2 {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 2rem; }
+    .productos .galeria__nav {
+      padding-left: 2rem;
+      padding-right: 2rem; }
+    .productos .galeria__items {
+      width: 20rem; } }
+
+/*Descargas - Receta -----------------------------------------*/
+/* Hero Image */
+.hero--download {
+  background-image: url("../img/Receta.jpg"); }
+
+.descargas {
+  margin: 0 auto; }
+  .descargas .button {
+    display: block;
+    margin: 2rem auto; }
+  .descargas .contenido__parrafo--list {
+    background-color: #252525;
+    border-radius: 2rem;
+    padding: 2rem; }
+    .descargas .contenido__parrafo--list .par {
+      margin-bottom: 0;
+      padding: 0;
+      color: #ffffff; }
+
+/*Contacto-------------------------------------------------*/
+/* Hero Image */
+.hero--contact {
+  background-image: url("../img/contacto.jpg"); }
+
+.contacto__info, .suscribe {
+  display: block;
+  margin: 1rem; }
+
+.contacto__form {
+  background-color: #252525;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem; }
+  .contacto__form .form__field {
+    display: block;
+    width: 100%;
+    margin: 1rem auto; }
+    .contacto__form .form__field .form__label {
+      font-family: "Montserrat" sans-serif;
+      font-size: 1.8rem;
+      padding-right: 0.5rem;
+      color: #ffffff; }
+    .contacto__form .form__field .form__input {
+      border-radius: 1rem;
+      padding-left: 1rem; }
+    .contacto__form .form__field .form__button {
+      display: block;
+      margin: 0 auto;
+      background-color: #f18787;
+      font-size: 1.6rem; }
+  .contacto__form .field__comment {
+    display: flex;
+    flex-direction: column; }
+  .contacto__form .field__check {
+    color: #ffffff; }
+
+.suscribe__button {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.6rem; }
+
+@media (min-width: 768px) {
+  .contacto__info {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center; }
+  .contacto__form {
+    width: 60rem; } }

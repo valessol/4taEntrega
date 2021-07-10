@@ -1,0 +1,64 @@
+/* Hero Image */ 
+.hero--contact {
+    background-image: url("../img/contacto.jpg");
+}
+
+.contacto__info, .suscribe {
+    display: block;
+    margin: 1rem;
+}
+
+.contacto__form {
+    background-color: $gris;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    .form__field {
+        display: block;
+        width: 100%;
+        margin: 1rem auto;
+        .form__label {
+           font-family: $fuentePpal;
+           font-size: 1.8rem;
+           padding-right: 0.5rem;
+           color: $blanco;
+        }
+        .form__input {
+           border-radius: 1rem;
+           padding-left: 1rem;
+        }
+        .form__button {
+            display: block;
+            margin: 0 auto;
+            background-color: $rosa;
+            font-size: 1.6rem;
+        }
+    }
+    .field__comment {
+        display: flex;
+        flex-direction: column;
+    }
+    .field__check {
+        color: $blanco;
+    }
+}
+
+.suscribe__button {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 768px) {
+    .contacto__info {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .contacto__form {
+        width: 60rem;
+    }
+}
+
+    
+
