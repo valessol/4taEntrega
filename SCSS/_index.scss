@@ -1,0 +1,126 @@
+/* Hero Image */ 
+.hero--home {
+        background-image: url("../img/ppal.jpg");
+    }
+
+/*Categorias*/
+
+.categorias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .categorias {
+       .button {
+            width: 40%;
+        } 
+    }
+}
+
+@media (min-width: 992px) {
+    .categorias {
+        .button {
+             width: 14rem;
+         } 
+     }
+}
+
+/*Slider*/
+
+.slider {
+    margin: 4rem auto;
+}
+
+/*Novedades*/ 
+
+.novedades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__card {
+        margin: 2rem;
+        &--content {
+            border: solid 2px $gris;
+            border-radius: 20px;
+            width: 90%;
+            margin: 0 auto;
+            .button {
+                display: block;
+                margin: 1rem auto;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 992px) {
+    .novedades {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
+/*Testimonios*/
+
+.testimonios {
+    background-color: $gris;
+    .subtitulo2 {
+        color: $blanco;
+    }
+    &__content {
+        height: 50rem;
+        margin: 0 auto;
+        .testimonios__card {
+            background-color: $gris;
+            img {
+                margin: 1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 480px) {
+    .testimonios__content {
+        height: 42rem;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .testimonios__card--display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 15rem;
+            height: 15rem;
+        }
+        .testimonios__card--text {
+            width: 90%;
+            text-align: center;
+        }
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .testimonios__content {
+        max-width: 700px;
+        height: 31rem;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .testimonios__content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}

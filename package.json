@@ -1,28 +1,27 @@
 {
-  "name": "proyecto-final",
+  "name": "decorarte-accesorios",
   "version": "1.0.0",
+  "description": "Desarrollo Web - Coderhouse 2021",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "Valeria Silveira",
-  "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^5.0.0",
-    "nodemon": "^2.0.7"
-  },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/valessol/4taEntrega.git"
   },
+  "author": "Valeria Silveira",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/valessol/4taEntrega/issues"
   },
   "homepage": "https://github.com/valessol/4taEntrega#readme",
-  "description": "Desarrollo Web - Coderhouse 2021",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.11"
+  },
   "keywords": [
     "desarrollo",
     "web",

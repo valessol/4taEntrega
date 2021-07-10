@@ -1,180 +1,207 @@
-/*Titulos - h1-----*/ 
+/*Titulos */ 
+.titulo, .subtitulo2, .subtitulo3 {
+    text-align: center;
+}
+
+.titulo, .subtitulo2 {
+    font-family: $fuentePpal;
+    text-transform: uppercase;
+    border: none;
+}
 
 .titulo {
-    font-family: $fuentePpal;
-    font-size: 60px;
-    text-align: center;
-    text-transform: uppercase;
-    border: none;
-    margin-top: $margin;
-    margin-bottom: $margin*2;
+    font-size: 4rem; 
 }
-
-/*Subtitulos - h2-----*/ 
 
 .subtitulo2 {
-    font-family: $fuentePpal;
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    border: none;
-    background-color: $blanco;
-    margin-top: $margin;
-    margin-bottom: $margin*2;
+    font-size: 2.5rem;
+    margin: 2rem;
 }
-
-/* Subtítulos - h3-----*/ 
 
 .subtitulo3 {
     font-family: $fuenteSec;
-    font-size: 25px;
-    text-align: center;
-    margin: $margin;
+    font-size: 2.5rem;
+    margin-top: 1rem;
  }
+
+ @media (min-width: 768px) {
+    .titulo {
+        font-size: 6rem;
+    }
+    .subtitulo2 {
+        font-size: 3rem;
+    }
+    .par {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .titulo {
+       font-size: 8rem;
+    }
+}
 
  /*Parrafos---*/
 
- p {
+ .par {
     font-family: $fuentePpal;
-    font-size: 18px;
+    font-size: 1.8rem;
     text-align: center;
-    margin-bottom: $margin;
-    padding: 0.5*$margin;
+    padding: 1rem;
  }
-
-
 
  /*Botones*/ 
 
  .button {
     color: white;
     background-color: $gris;
-    padding: $margin;
+    padding: 1rem;
+    margin: 1rem;
     border-radius: 10px;
     box-shadow: $shadow;
     transition: transform 1s;
     font-family: $fuentePpal;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 90%;
+    text-align: center;
  }
  .button:hover {
-    background-color: rgb(241, 135, 135);
+    background-color: $rosa;
     color:$gris;
     border: none;
-    transform: scale(1.05);
+    transform: scale(0.95);
+}
+
+@media (min-width: 768px) {
+    .button {
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    .button {
+        width: 14rem;
+    }
 }
 
 /* Hero Image */ 
 
 .hero {
-    margin: 0 0 2*$margin 0;
-    .hero-image {
-        height: 400px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        .hero-text {
-            text-align: center;
-            font-family: $fuentePpal;
-            padding-top: 130px;
-            left: 50%;
-            color: white;
-            h1 {
-                font-size: 80px;
-            }
-            p {
-                font-size: 30px;
-            }
-      }
-    }
-}
-
-
-/* Formularios*/ 
-
-.form {
-    .form-field {
-        margin: $margin;
+    height: 30rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 4rem;
+    .hero__content {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 100%;
+        font-family: $fuentePpal;
+        color: white;
         display: flex;
-        flex-flow: column nowrap;
-        justify-content: start;
-        .label {
-            font-family: $fuentePpal;
-            font-size: 18px;
-            padding-right: $margin;
-            padding-bottom: $margin/2;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .titulo {
+            text-transform: none;
         }
-        .input {
-            border: 1px solid $gris;
-            border-radius: 5px;
-            padding-left: $margin;
-            text-transform: capitalize;
-            width: 100%;
+        .par {
+             font-size: 2rem;
         }
     }
-    .form-check {
-        margin: $margin;
-        display: inline-block;
-        input {
-            display: inline;
-        }
-        div {
-            display: inline;
-        }
-    }
-
 }
 
-/* Media Queries*/ 
 
-@media screen and (max-width: 1400px) {
+// /* Formularios*/ 
 
-   /* Hero Image */ 
+// .form {
+//     .form-field {
+//         margin: $margin;
+//         display: flex;
+//         flex-flow: column nowrap;
+//         justify-content: start;
+//         .label {
+//             font-family: $fuentePpal;
+//             font-size: 18px;
+//             padding-right: $margin;
+//             padding-bottom: $margin/2;
+//         }
+//         .input {
+//             border: 1px solid $gris;
+//             border-radius: 5px;
+//             padding-left: $margin;
+//             text-transform: capitalize;
+//             width: 100%;
+//         }
+//     }
+//     .form-check {
+//         margin: $margin;
+//         display: inline-block;
+//         input {
+//             display: inline;
+//         }
+//         div {
+//             display: inline;
+//         }
+//     }
 
-.hero .hero-image .hero-text h1 {
-                font-size: 60px;
-            }
-      }
+// }
+
+// /* Media Queries*/ 
+
+// @media screen and (max-width: 1400px) {
+
+//    /* Hero Image */ 
+
+// .hero .hero-image .hero-text h1 {
+//                 font-size: 60px;
+//             }
+//       }
     
 
-@media screen and (max-width: 1200px) {
+// @media screen and (max-width: 1200px) {
     
-  }
+//   }
 
   
-@media screen and (max-width: 992px) {
-   /* Hero Image */ 
+// @media screen and (max-width: 992px) {
+//    /* Hero Image */ 
 
-    .hero .hero-image {
-        height: 250px;
-        .hero-text {
-            padding-top: 80px;
-            h1 {
-                font-size: 40px;
-            }
-            p {
-                font-size: 20px;
-            }
-        }
-    }
-}
+//     .hero .hero-image {
+//         height: 250px;
+//         .hero-text {
+//             padding-top: 80px;
+//             h1 {
+//                 font-size: 40px;
+//             }
+//             p {
+//                 font-size: 20px;
+//             }
+//         }
+//     }
+// }
 
-@media screen and (max-width: 768px) {
-   /* Hero Image */ 
+// @media screen and (max-width: 768px) {
+//    /* Hero Image */ 
 
-   .hero .hero-image {
-    height: 200px;
-    .hero-text {
-        padding-top: 60px;
-        h1 {
-            font-size: 30px;
-        }
-        p {
-            font-size: 16px;
-        }
-    }
-}
-}
+//    .hero .hero-image {
+//     height: 200px;
+//     .hero-text {
+//         padding-top: 60px;
+//         h1 {
+//             font-size: 30px;
+//         }
+//         p {
+//             font-size: 16px;
+//         }
+//     }
+// }
+// }
 
-@media screen and (max-width: 576px) {
+// @media screen and (max-width: 576px) {
    
-}
+// }

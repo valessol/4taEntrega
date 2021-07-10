@@ -1,62 +1,77 @@
 footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    justify-items: flex-start;
     background-color: $gris;
-    color: $blanco;
-    margin-top: $margin;
-    padding: 20px;
-    font-family: $fuentePpal;
-
-    .menuFooter {
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $blanco;
+        margin-top: $margin;
+        padding: 20px;
+        font-family: $fuentePpal;
+    }
+    .footer__menu {
+        display: block;
+        margin: 0 auto;
         list-style-type: none;
-        a {
-            text-decoration: none;
-            color: $blanco;
+        li {
+            text-align: center;
+            a {
+                text-decoration: none;
+                text-align: center;
+                color: $blanco;
+            }
         }
         .redesSociales {
             width: 40px;
             height: 40px;
         }
     }
-    .logoFooter {
-        width: 150px;
-        height: 150px;
+    .menu--contacto {
+        margin-top: 2rem;
     }
 }
 
-@media screen and (max-width: 992px) {
-    
-    footer {
-      .menufooter {
-        font-size: 14px;
-        }
-        .logoFooter {
-            width: 100px;
-            height: 100px;
-        }  
+@media (min-width: 480px) {
+    .footer__content {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        justify-items: flex-start;
     }
-    
 }
+    
 
-@media screen and (max-width: 768px) {
+
+// @media screen and (max-width: 992px) {
     
-    footer {
-      .menufooter {
-        font-size: 12px;
-        .redesSociales {
-            width: 25px;
-            height: 25px;
-        }
-        }
-        .logoFooter {
-            width: 100px;
-            height: 100px;
-        }  
-    }
+//     footer {
+//       .menufooter {
+//         font-size: 14px;
+//         }
+//         .logoFooter {
+//             width: 100px;
+//             height: 100px;
+//         }  
+//     }
     
-}
+// }
+
+// @media screen and (max-width: 768px) {
+    
+//     footer {
+//       .menufooter {
+//         font-size: 12px;
+//         .redesSociales {
+//             width: 25px;
+//             height: 25px;
+//         }
+//         }
+//         .logoFooter {
+//             width: 100px;
+//             height: 100px;
+//         }  
+//     }
+    
+// }
     
     
